@@ -1,0 +1,12 @@
+:root {
+    /* Colors */
+    --colorPrincipal: #099d8d;
+    --colorSecondary: #14d9c4;
+    --colorContrast1: #fff;
+    --colorContrast2: #b8b8b9;
+    --colorContrast3:#54585a;
+    --ColorContrast4: #000;
+    /* Typographys */
+    --typoTitle: 'Rubik', sans-serif;
+    --typoText: 'Open Sans', sans-serif;
+}
