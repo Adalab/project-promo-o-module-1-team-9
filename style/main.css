@@ -1,12 +1,53 @@
 :root {
-    /* Colors */
-    --colorPrincipal: #099d8d;
-    --colorSecondary: #14d9c4;
-    --colorContrast1: #fff;
-    --colorContrast2: #b8b8b9;
-    --colorContrast3:#54585a;
-    --ColorContrast4: #000;
-    /* Typographys */
-    --typoTitle: 'Rubik', sans-serif;
-    --typoText: 'Open Sans', sans-serif;
+  /* Colors */
+  --colorPrincipal: #099d8d;
+  --colorSecondary: #14d9c4;
+  --colorContrast1: #fff;
+  --colorContrast2: #b8b8b9;
+  --colorContrast3: #54585a;
+  --ColorContrast4: #000;
+  /* Typographys */
+  --typoTitle: "Rubik", sans-serif;
+  --typoText: "Open Sans", sans-serif;
 }
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* Header: group's name */
+.group-name {
+  width: 100%;
+  background-color: var(--colorPrincipal);
+  font-family: var(--typoTitle);
+  color: var(--colorContrast1);
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header: sections */
+.menu-container {
+  background-color: var(--colorSecondary);
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-item {
+  list-style-type: none;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: var(--colorContrast1);
+  font-family: var(--typoTitle);
+  font-size: 15px;
+  line-height: 30px;
+}
+
+/* Header: image */
