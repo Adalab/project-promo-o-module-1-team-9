@@ -51,3 +51,93 @@
 }
 
 /* Header: image */
+
+/* Main: section team*/
+
+.equipo {
+  width: 89px;
+  height: 45px;
+  margin: 0 99.5px 15px 101.5px;
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: center;
+  color: aqua;
+}
+.fortalezas {
+  width: 290px;
+  height: 45px;
+  font-family: Rubik;
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.05;
+  letter-spacing: normal;
+  text-align: center;
+  color: aqua;
+}
+.debilidades {
+  width: 290px;
+  height: 45px;
+  margin: 30px 0 0;
+  font-family: Rubik;
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.05;
+  letter-spacing: normal;
+  text-align: center;
+  color: aqua;
+}
+/* Class p-equip */
+.p-equipo {
+  width: 290px;
+  height: 384px;
+  margin: 15px 0 0;
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #54585a;
+}
+/* Class p-fortalezas */
+
+.p-fortalezas {
+  width: 290px;
+  height: 192px;
+  margin: 45px 0 30px;
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #54585a;
+}
+/* Class p-debilidades */
+.p-debilidades {
+  width: 290px;
+  height: 192px;
+  margin: 75px 0 0;
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #54585a;
+}
