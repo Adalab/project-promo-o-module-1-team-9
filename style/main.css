@@ -213,3 +213,100 @@
   z-index: 999;
   transform: translateY(133%);
 }
+.who-we-are {
+  width: 193px;
+  height: 45px;
+  margin: 0 47.5px 30px 49.5px;
+  color: var(--colorPrincipal);
+  font-family: var(--typoTitle);
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: center;
+}
+.photo {
+  width: 180px;
+  height: 180px;
+  margin: 0 55px;
+  border-radius: 4px;
+  border: solid 5px rgba(0, 0, 0, 0.08);
+}
+.member {
+  width: 147px;
+  height: 45px;
+  margin: 15px 70.5px;
+  font-family: var(--typoText);
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--ColorContrast4);
+}
+.description {
+  width: 290px;
+  height: 200px;
+  margin: 0 15 0 15;
+  font-family: var(--typoText);
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--colorContrast3);
+}
+.social-media-link {
+  width: 124px;
+  height: 30px;
+  margin: 15px 83px 0;
+  color: var(--colorPrincipal);
+  text-align: center;
+  letter-spacing: normal;
+  line-height: 1.88;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.name-in-footer {
+  width: 172px;
+  height: 20px;
+  margin: 30px 20px 0px 20px;
+  font-family: var(--typoText);
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--colorContrast2);
+}
+.footer-menu {
+  width: 114px;
+  height: 60px;
+  margin: 20px 29px 30px;
+  opacity: 0.75;
+  font-family: var(--typoText);
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--colorContrast3);
+  text-transform: uppercase;
+}
