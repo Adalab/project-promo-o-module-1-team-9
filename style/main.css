@@ -8,7 +8,9 @@
   --colorContrast2: #b8b8b9;
   --colorContrast2Transparent: #b8b8b933;
   --colorContrast3: #54585a;
+  --colorContrast3Transparent: #54585abf;
   --ColorContrast4: #000;
+  --ColorContrast4Transparent: rgba(0, 0, 0, 0.08) ;
   /* Typographys */
   --typoTitle: "Rubik", sans-serif;
   --typoText: "Open Sans", sans-serif;
@@ -22,7 +24,6 @@
   flex-wrap: wrap;
   justify-content: space-around;
   position: relative;
-  
 }
 
 /* Header: group's name */
@@ -73,7 +74,7 @@
 /* Header: image */
 .header-background {
   height: 421px;
-  width: 100vw;
+  width: 100vw; 
   background-size: cover;
   background-image: url(../images/code-image.jpg);
   background-repeat: no-repeat;
@@ -100,15 +101,15 @@
 
 /* MAIN */
 
-/* .main {
-  padding: 20px;
-} */
+.main {
+  width: 100vw;
+}
 
 /* Main: section team*/
 
 .equipo {
   margin: auto;
-  font-family: Rubik;
+  font-family: var(--typoTitle);
   font-size: 24px;
   font-weight: 500;
   font-stretch: normal;
@@ -116,14 +117,24 @@
   line-height: 1.88;
   letter-spacing: normal;
   text-align: center;
-  color: aqua;
-
+  color: var(--colorSecondary);
 }
+
+.divider {
+  width: 30px;
+  height: 30px;
+  background-color: var(--colorContrast1);
+  transform: rotate(45deg);
+  position: relative;
+  left: 50%;
+  top: 15px;
+}
+
 .fortalezas {
   width: auto;
   height: auto;
   margin: auto;
-  font-family: Rubik;
+  font-family: var(--typoTitle);
   font-size: 22px;
   font-weight: 500;
   font-stretch: normal;
@@ -131,14 +142,14 @@
   line-height: 2.05;
   letter-spacing: normal;
   text-align: center;
-  color: aqua;
+  color: var(--colorPrincipal);
   padding: 30px 15px 0 15px;
 }
 .debilidades {
   width: auto;
   height: auto;
   margin: auto;
-  font-family: Rubik;
+  font-family: var(--typoTitle);
   font-size: 22px;
   font-weight: 500;
   font-stretch: normal;
@@ -146,7 +157,7 @@
   line-height: 2.05;
   letter-spacing: normal;
   text-align: center;
-  color: aqua;
+  color: var(--colorPrincipal);
   padding: 30px 15px 0 15px;
 }
 /* Class p-equip */
@@ -160,7 +171,7 @@
   line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
-  color: #54585a;
+  color: var(--colorContrast3);
   position: relative;
   padding: 30px 15px;
 }
@@ -175,7 +186,7 @@
 
 .p-fortalezas {
   margin: auto;
-  font-family: OpenSans;
+  font-family: var(--typoText);
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -183,12 +194,13 @@
   line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
-  color: #54585a;
+  color: var(--colorContrast3);
+  padding: 30px 15px;
 }
 /* Class p-debilidades */
 .p-debilidades {
   margin: auto;
-  font-family: OpenSans;
+  font-family: var(--typoText);
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -196,14 +208,15 @@
   line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
-  color: #54585a;
-  padding-bottom: 45px;
+  color: var(--colorContrast3);
+  padding: 30px 15px;
 }
 
+/* Quienes somos */
 .who-we-are {
   width: 193px;
   height: 45px;
-  margin: 0 47.5px 30px 49.5px;
+  margin: auto;
   color: var(--colorPrincipal);
   font-family: var(--typoTitle);
   font-size: 24px;
@@ -214,20 +227,85 @@
   letter-spacing: normal;
   text-align: center;
 }
-.photo {
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Noelia's photo */
+.photo-noelia {
   width: 180px;
   height: 180px;
-  margin: 0 55px;
-  border-radius: 4px;
-  border: solid 5px rgba(0, 0, 0, 0.08);
+  margin: auto;
 }
+
+.img-noelia{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  border: solid 5px var(--ColorContrast4Transparent);
+}
+
+/* Natalia's photo */
+.photo-natalia {
+  margin: auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
+  border: solid 5px var(--ColorContrast4Transparent);
+   
+}
+
+.img-natalia{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+/* Paula's photo */
+.photo-paula {
+  width: 180px;
+  margin: auto;
+  height: 180px;
+  border-radius: 4px;
+  border: solid 5px var(--ColorContrast4Transparent);
+}
+.img-paula{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Alejandra's photo */
+.photo-alejandra {
+  margin: auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
+  border: solid 5px var(--ColorContrast4Transparent);
+}
+
+.img-alejandra{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member-global {
+  font-family: var(--typoText);
+}
+
 .member {
-  width: 147px;
+  width: 100%;
   height: 45px;
-  margin: 15px 70.5px;
+  margin: auto;
   font-family: var(--typoText);
   font-size: 20px;
-  font-weight: normal;
+  font-weight: 400;
   font-stretch: normal;
   font-style: normal;
   line-height: 2.25;
@@ -235,10 +313,11 @@
   text-align: center;
   color: var(--ColorContrast4);
 }
+
 .description {
   width: 290px;
-  height: 200px;
-  margin: 0 15 0 15;
+  height: auto;
+  margin: auto;
   font-family: var(--typoText);
   font-size: 16px;
   font-weight: normal;
@@ -252,7 +331,7 @@
 .social-media-link {
   width: 124px;
   height: 30px;
-  margin: 15px 83px 0;
+  margin: auto;
   color: var(--colorPrincipal);
   text-align: center;
   letter-spacing: normal;
@@ -262,15 +341,20 @@
   font-stretch: normal;
   font-style: normal;
 }
-footer {
+
+/* footer  */
+
+.footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
+  justify-content: space-around;
+} 
 .name-in-footer {
   width: 172px;
   height: 20px;
-  margin: 30px 20px 0px 20px;
+  margin: auto;
+  padding-top: 75px;
+  padding-bottom: 40px;
   font-family: var(--typoText);
   font-size: 14px;
   font-weight: normal;
@@ -278,14 +362,17 @@ footer {
   font-style: normal;
   line-height: 1.43;
   letter-spacing: normal;
-  text-align: center;
   color: var(--colorContrast2);
+  text-align: center;
 }
+
+
 .footer-menu {
+  padding-top: 40px;
+  padding-bottom: 30px;
   width: 114px;
   height: 60px;
-  margin: 20px 29px 30px;
-  opacity: 0.75;
+  margin: auto;
   font-family: var(--typoText);
   font-size: 14px;
   font-weight: 600;
@@ -293,7 +380,31 @@ footer {
   font-style: normal;
   line-height: 1.43;
   letter-spacing: normal;
-  text-align: center;
-  color: var(--colorContrast3);
+  text-align: center; 
+  color: var(--colorContrast3Transparent);
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  
 }
+.footer-a {
+  text-align: center;
+  color: var(--colorContrast3Transparent);
+    
+}
+.adalab-logo {
+  padding-top: 30px;
+  width: 116px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  margin-bottom: 45px;
+  }
+  
+  .adalab{
+    width: 100%;
+    object-fit: cover;
+  }
