@@ -6,6 +6,7 @@
   --colorSecondaryTransparent: #14d9c5c9;
   --colorContrast1: #fff;
   --colorContrast2: #b8b8b9;
+  --colorContrast2Transparent: #b8b8b933;
   --colorContrast3: #54585a;
   --ColorContrast4: #000;
   /* Typographys */
@@ -21,6 +22,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   position: relative;
+  
 }
 
 /* Header: group's name */
@@ -52,6 +54,7 @@
   background-color: var(--colorSecondaryTransparent);
   display: flex;
   z-index: 996;
+  position: relative;
   justify-content: space-evenly;
   padding: 8px 0;
 }
@@ -74,6 +77,8 @@
   background-size: cover;
   background-image: url(../images/code-image.jpg);
   background-repeat: no-repeat;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /* Header: hero */
@@ -88,16 +93,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  z-index: 995;
+  position: relative;
+  z-index: 993;
   transform: translateY(-48%);
 }
+
+/* MAIN */
+
+/* .main {
+  padding: 20px;
+} */
 
 /* Main: section team*/
 
 .equipo {
-  width: 89px;
-  height: 45px;
   margin: auto;
   font-family: Rubik;
   font-size: 24px;
@@ -108,13 +117,12 @@
   letter-spacing: normal;
   text-align: center;
   color: aqua;
+
 }
 .fortalezas {
   width: auto;
   height: auto;
   margin: auto;
-  position: relative;
-  top: 30px;
   font-family: Rubik;
   font-size: 22px;
   font-weight: 500;
@@ -124,13 +132,12 @@
   letter-spacing: normal;
   text-align: center;
   color: aqua;
+  padding: 30px 15px 0 15px;
 }
 .debilidades {
   width: auto;
   height: auto;
   margin: auto;
-  position: relative;
-  top: 297px;
   font-family: Rubik;
   font-size: 22px;
   font-weight: 500;
@@ -140,18 +147,12 @@
   letter-spacing: normal;
   text-align: center;
   color: aqua;
-  position: relative;
-  top: 297px;
-  left: 15px;
-  right: 15px;
-  bottom: 237px;
+  padding: 30px 15px 0 15px;
 }
 /* Class p-equip */
 .p-equipo {
-  width: 290px;
-  height: 384px;
   margin: auto;
-  font-family: OpenSans;
+  font-family: var(--typoText);
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -161,23 +162,18 @@
   text-align: center;
   color: #54585a;
   position: relative;
-  top: 90px;
-  left: 15px;
-  right: 15px;
-  bottom: 30px;
+  padding: 30px 15px;
 }
+
 .sectionteam {
-  background-color: #b8b8b9;
+  background-color: var(--colorContrast2Transparent);
   padding: 0%;
   border: 0px solid #b8b8b9;
   width: auto;
-  height: 579px;
 }
 /* Class p-fortalezas */
 
 .p-fortalezas {
-  width: 290px;
-  height: 192px;
   margin: auto;
   font-family: OpenSans;
   font-size: 16px;
@@ -188,16 +184,9 @@
   letter-spacing: normal;
   text-align: center;
   color: #54585a;
-  position: relative;
-  top: 75px;
-  left: 15px;
-  right: 15px;
-  bottom: 312px;
 }
 /* Class p-debilidades */
 .p-debilidades {
-  width: 290px;
-  height: 192px;
   margin: auto;
   font-family: OpenSans;
   font-size: 16px;
@@ -208,37 +197,9 @@
   letter-spacing: normal;
   text-align: center;
   color: #54585a;
-  position: relative;
-  position: relative;
-  top: 342px;
-  left: 15px;
-  right: 15px;
-  bottom: 45px;
-}
-.header-background {
-  height: 421px;
-  width: 100vw;
-  background-size: cover;
-  background-image: url(../images/code-image.jpg);
-  background-repeat: no-repeat;
+  padding-bottom: 45px;
 }
 
-/* Header: hero */
-.hero {
-  background-color: var(--colorContrast1);
-  font-family: var(--typoText);
-  color: var(--ColorContrast4);
-  font-size: 18px;
-  line-height: 25px;
-  margin: 0 15px;
-  padding: 0 14px 15px 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  z-index: 999;
-  transform: translateY(133%);
-}
 .who-we-are {
   width: 193px;
   height: 45px;
