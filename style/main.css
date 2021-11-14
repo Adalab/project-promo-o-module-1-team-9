@@ -74,7 +74,8 @@
   height: 421px;
   width: 100%;
   background-size: cover;
-  background-image: url(../images/code-image.jpg);
+  /* background-image: url(../images/code-image.jpg); */
+  background-image: url(../images/logo6.jpg);
   background-repeat: no-repeat;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -95,6 +96,10 @@
   position: relative;
   z-index: 993;
   transform: translateY(-48%);
+}
+
+.hero p {
+  text-align: center;
 }
 
 /* MAIN */
@@ -353,7 +358,7 @@
   font-style: normal;
 }
 
-.nav-icons{
+.nav-icons {
   margin-top: 15px;
 }
 
