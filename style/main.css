@@ -222,6 +222,13 @@
 }
 
 /* Quienes somos */
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  font-family: var(--typoText);
+}
 .who-we-are {
   margin-top: 30px;
   width: 193px;
@@ -238,13 +245,6 @@
   letter-spacing: normal;
   text-align: center;
 }
-.about-us {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: center;
-}
-
 /* Noelia's photo */
 .photo-noelia {
   margin-top: 30px;
@@ -311,10 +311,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.member-global {
-  font-family: var(--typoText);
 }
 
 .member {
@@ -433,4 +429,97 @@
 .adalab {
   width: 100%;
   object-fit: cover;
+}
+@media all and (min-width: 768px) {
+  .noelia:first-of-type {
+    display: flex;
+    justify-content: left;
+  }
+  .noelia:nth-last-of-type() {
+    display: flex;
+    justify-content: left;
+  }
+  .natalia:first-of-type {
+    display: flex;
+    justify-content: right;
+  }
+  .natalia:nth-last-of-type() {
+    display: flex;
+    justify-content: right;
+  }
+  .alejandra:first-of-type {
+    display: flex;
+    justify-content: left;
+  }
+  .alejandra:nth-last-of-type() {
+    display: flex;
+    justify-content: left;
+  }
+  .paula:first-of-type {
+    display: flex;
+    justify-content: right;
+  }
+  .paula:nth-last-of-type() {
+    display: flex;
+    justify-content: left;
+  }
+
+  .noelia-description {
+    margin-right: 44px;
+    width: 443px;
+    text-align: left;
+  }
+  .alejandra-description {
+    margin-right: 44px;
+    width: 443px;
+    text-align: left;
+  }
+  .natalia-description {
+    margin-right: 44px;
+    width: 443px;
+    text-align: right;
+    margin-right: 281px;
+  }
+  .paula-description {
+    margin-right: 44px;
+    width: 443px;
+    text-align: right;
+    margin-right: 281px;
+  }
+  .photo-noelia {
+    position: absolute;
+    float: left middle;
+    margin-left: 43px;
+  }
+  .photo-alejandra {
+    position: absolute;
+    float: left middle;
+    margin-left: 43px;
+  }
+  .photo-natalia {
+    position: absolute;
+    float: right middle;
+    right: 0;
+    margin-right: 43px;}
+
+.photo-paula{
+      position: absolute;
+      float: right middle;
+      right: 0;
+      margin-right: 43px;
+    }
+  }
+
+  .member-left {
+    width: 200px;
+    text-align: left;
+  }
+  .member-right {
+    width: 200px;
+    text-align: left;
+  }
+
+  .img-noelia {
+    float: left;
+  }
 }
