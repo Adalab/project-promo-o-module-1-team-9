@@ -140,31 +140,19 @@
 }
 
 .fortalezas {
-  width: auto;
-  height: auto;
-  margin: auto;
   font-family: var(--typoTitle);
   font-size: 22px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 2.05;
-  letter-spacing: normal;
   text-align: center;
   color: var(--colorPrincipal);
   padding: 30px 15px 0 15px;
 }
 .debilidades {
-  width: auto;
-  height: auto;
-  margin: auto;
   font-family: var(--typoTitle);
   font-size: 22px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 2.05;
-  letter-spacing: normal;
   text-align: center;
   color: var(--colorPrincipal);
   padding: 30px 15px 0 15px;
@@ -174,11 +162,7 @@
   margin: auto;
   font-family: var(--typoText);
   font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.5;
-  letter-spacing: normal;
   text-align: center;
   color: var(--colorContrast3);
   position: relative;
@@ -192,16 +176,11 @@
   width: auto;
 }
 /* Class p-fortalezas */
-
 .p-fortalezas {
   margin: auto;
   font-family: var(--typoText);
   font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.5;
-  letter-spacing: normal;
   text-align: center;
   color: var(--colorContrast3);
   padding: 0 15px;
@@ -211,11 +190,7 @@
   margin: auto;
   font-family: var(--typoText);
   font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.5;
-  letter-spacing: normal;
   text-align: center;
   color: var(--colorContrast3);
   padding: 0 15px 30px;
