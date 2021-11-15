@@ -245,7 +245,9 @@
   letter-spacing: normal;
   text-align: center;
 }
+
 /* Noelia's photo */
+
 .photo-noelia {
   margin-top: 30px;
   width: 180px;
@@ -487,30 +489,42 @@
     margin-right: 281px;
   }
   .photo-noelia {
+    margin-top: 41px;
+    width: 206px;
+    height: 206px;
     position: absolute;
     float: left middle;
     margin-left: 43px;
   }
   .photo-alejandra {
+    margin-top: 60px;
+    width: 206px;
+    height: 206px;
     position: absolute;
     float: left middle;
     margin-left: 43px;
   }
   .photo-natalia {
+    margin-top: 60px;
+    width: 206px;
+    height: 206px;
     position: absolute;
-    float: right middle;
+    float: right;
     right: 0;
-    margin-right: 43px;}
-
-.photo-paula{
-      position: absolute;
-      float: right middle;
-      right: 0;
-      margin-right: 43px;
-    }
+    margin-right: 43px;
   }
 
-  .member-left {
+  .photo-paula {
+    width: 206px;
+    height: 206px;
+    position: absolute;
+    float: right;
+    right: 0;
+    margin-right: 43px;
+    margin-top: 60px;
+  }
+
+  .member-noelia {
     width: 200px;
     text-align: left;
   }
