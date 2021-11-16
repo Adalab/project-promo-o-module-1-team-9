@@ -80,7 +80,6 @@
   height: 421px;
   width: 100%;
   background-size: cover;
-  /* background-image: url(../images/code-image.jpg); */
   background-image: url(../images/logo6.jpg);
   background-repeat: no-repeat;
   margin-bottom: 0;
@@ -433,7 +432,7 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--colorSecondary);
-  padding-top: 45px
+  padding-top: 45px;
 }
 
 .contact-p {
@@ -473,7 +472,24 @@
   color: var(--colorSecondary);
 }
 
+/* RESPONSIVE VERSION */
+
 @media all and (min-width: 768px) {
+  /* Responsive: header */
+  .header-fix {
+    background-color: var(--colorPrincipalTransparent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .group-name {
+    background-color: transparent;
+  }
+  .menu-container {
+    background-color: transparent;
+  }
+
+  /* Responsive: Contact-us */
   .noelia:first-of-type {
     display: flex;
     justify-content: left;
