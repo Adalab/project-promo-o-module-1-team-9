@@ -407,6 +407,50 @@
   width: 100%;
   object-fit: cover;
 }
+
+/* Contact */
+
+.contact-background {
+  height: 421px;
+  width: 100%;
+  background-size: cover;
+  background-image: url(../images/contact.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.contact-title {
+  margin: auto;
+  font-family: var(--typoTitle);
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--colorSecondary);
+  padding-top: 45px
+}
+
+.contact-p {
+  margin: auto;
+  font-family: var(--typoText);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--colorContrast3);
+  position: relative;
+  padding: 15px 15px 58px;
+}
+
+.contact-form {
+  font-family: var(--typoText);
+}
+
 @media all and (min-width: 768px) {
   .noelia:first-of-type {
     display: flex;

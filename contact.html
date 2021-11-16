@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/88da29725b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/main.css" />
     <title>Contacto</title>
   </head>
+
   <body>
     <header class="header-container">
       <div class="header-fix">
@@ -30,14 +43,22 @@
     </header>
 
     <main>
-      <section class="contacto">
-        <h2>Contacto</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, eos
-          eveniet aut consequatur quos possimus!
-        </p>
-        <p>Todos los campos marcados con * son obligatorios</p>
-        <form action="/signup" method="post">
+      <section class="contact">
+        <h2 class="contact-title">Contacto</h2>
+        <div class="contact-p">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, eos
+            eveniet aut consequatur quos possimus!
+          </p>
+          <p>
+            <small
+              >Todos los campos marcados con <span class="highlight">*</span> son
+              obligatorios</small
+            >
+          </p>
+        </div>
+
+        <form action="/signup" method="post" class="contact-form">
           <label for="completeName">Nombre completo</label>
           <input
             placeholder="Nombre..."
@@ -53,7 +74,7 @@
             type="email"
             name="email"
           />
-          <label for="phoneNumber">Teléono</label>
+          <label for="phoneNumber">Teléfono</label>
           <input
             placeholder="Ej: 123456789"
             id="phoneNumber"
