@@ -449,6 +449,28 @@
 
 .contact-form {
   font-family: var(--typoText);
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contact-form-item {
+  margin: 5px 0 15px 0;
+  padding: 11px 15px 15px 15px;
+}
+
+#message {
+  font-family: var(--typoText);
+}
+
+.highlight {
+  color: var(--colorSecondary);
 }
 
 @media all and (min-width: 768px) {
