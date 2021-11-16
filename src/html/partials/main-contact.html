@@ -1,0 +1,61 @@
+<main>
+    <section class="contact">
+      <h2 class="contact-title">Contacto</h2>
+      <div class="contact-p">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, eos
+          eveniet aut consequatur quos possimus!
+        </p>
+        <p>
+          <small
+            >Todos los campos marcados con
+            <span class="highlight">*</span> son obligatorios</small
+          >
+        </p>
+      </div>
+
+      <form action="/signup" method="post" class="contact-form">
+        <div class="contact-form-container">
+          <label for="completeName">Nombre completo <span class="highlight">*</span></label>
+          <input
+            class="contact-form-item"
+            placeholder="Nombre..."
+            id="completeName"
+            type="text"
+            name="completeName"
+            required
+          />
+        </div>
+        <div class="contact-form-container">
+          <label for="emailAddress">Email <span class="highlight">*</span></label>
+          <input
+            class="contact-form-item"
+            value="nombre.apellidos@mail.com"
+            id="emailAddress"
+            type="email"
+            name="email"
+          />
+        </div>
+        <div class="contact-form-container">
+          <label for="phoneNumber">Teléfono</label>
+          <input
+            class="contact-form-item"
+            placeholder="Ej: 123456789"
+            id="phoneNumber"
+            type="tel"
+            name="phoneNumber"
+          />
+        </div>
+        <div class="contact-form-container">
+          <label for="message">Mensaje <span class="highlight">*</span></label>
+          <textarea
+            class="contact-form-item"
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="¿Qué necesitas?"
+          ></textarea>
+        </div>
+      </form>
+    </section>
+  </main>
