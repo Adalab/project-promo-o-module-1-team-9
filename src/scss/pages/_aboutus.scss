@@ -1,0 +1,209 @@
+/* Quienes somos */
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  font-family: var(--typoText);
+}
+.who-we-are {
+  margin-top: 30px;
+  width: 193px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--colorPrincipal);
+  font-family: var(--typoTitle);
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+/* Noelia's photo */
+
+.photo-noelia {
+  margin-top: 30px;
+  width: 180px;
+  height: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.img-noelia {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  border: solid 5px var(--ColorContrast4Transparent);
+}
+
+/* Natalia's photo */
+.photo-natalia {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
+  border: solid 5px var(--ColorContrast4Transparent);
+}
+
+.img-natalia {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Paula's photo */
+.photo-paula {
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  height: 180px;
+  border-radius: 4px;
+  border: solid 5px var(--ColorContrast4Transparent);
+}
+.img-paula {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Alejandra's photo */
+.photo-alejandra {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
+  border: solid 5px var(--ColorContrast4Transparent);
+}
+
+.img-alejandra {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member {
+  width: 100%;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--typoText);
+  font-size: 20px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--ColorContrast4);
+}
+
+.description {
+  width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15 px;
+  font-family: var(--typoText);
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--colorContrast3);
+}
+.social-media-link {
+  width: 124px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  color: var(--colorPrincipal);
+  text-align: center;
+  letter-spacing: normal;
+  line-height: 1.88;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+.nav-icons {
+  margin-top: 15px;
+}
+
+// .contact-background {
+//   height: 421px;
+//   width: 100%;
+//   background-size: cover;
+//   background-image: url(../images/contact.jpg);
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   margin-bottom: 0;
+//   padding-bottom: 0;
+// }
+
+// .contact-title {
+//   margin: auto;
+//   font-family: var(--typoTitle);
+//   font-size: 24px;
+//   font-weight: 500;
+//   font-stretch: normal;
+//   font-style: normal;
+//   line-height: 1.88;
+//   letter-spacing: normal;
+//   text-align: center;
+//   text-transform: uppercase;
+//   color: var(--colorSecondary);
+//   padding-top: 45px;
+// }
+
+// .contact-p {
+//   margin: auto;
+//   font-family: var(--typoText);
+//   font-size: 16px;
+//   line-height: 1.5;
+//   text-align: center;
+//   color: var(--colorContrast3);
+//   position: relative;
+//   padding: 15px 15px 58px;
+// }
+
+// .contact-form {
+//   font-family: var(--typoText);
+//   display: flex;
+//   flex-direction: column;
+//   padding: 0 15px;
+// }
+
+// .contact-form-container {
+//   display: flex;
+//   flex-direction: column;
+
+// }
+
+// .contact-form-item {
+//   margin: 5px 0 15px 0;
+//   padding: 11px 15px 15px 15px;
+// }
+
+// #message {
+//   font-family: var(--typoText);
+// }
+
+// .highlight {
+//   color: var(--colorSecondary);
+// }
+
+/* RESPONSIVE VERSION */

@@ -1,8 +1,66 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+/* footer  */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-top: 1px solid var(--colorContrast2);
+}
+.name-in-footer {
+  width: 172px;
+  height: 20px;
+  margin: 30px auto 20px auto;
+  font-family: var(--typoText);
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: var(--colorContrast2);
+  text-align: center;
+}
+
+.footer-menu {
+  width: 114px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--typoText);
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--colorContrast3Transparent);
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.footer-a {
+  text-align: center;
+  color: var(--colorContrast3Transparent);
+}
+
+.last-article {
+  margin-bottom: 45px;
+}
+
+.adalab-logo {
+  /* padding-top: 30px; */
+  width: 116px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  margin-bottom: 45px;
+}
+
+.adalab {
+  width: 100%;
+  object-fit: cover;
 }

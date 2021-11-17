@@ -1,0 +1,88 @@
+/* MAIN */
+
+.main {
+  width: 100%;
+}
+
+/* Main: section team*/
+
+.equipo {
+  margin: auto;
+  font-family: var(--typoTitle);
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--colorSecondary);
+}
+
+.divider {
+  width: 30px;
+  height: 30px;
+  background-color: var(--colorContrast1);
+  transform: rotate(45deg);
+  position: relative;
+  left: 47%;
+  top: 15px;
+}
+
+.fortalezas {
+  font-family: var(--typoTitle);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 2.05;
+  text-align: center;
+  color: var(--colorPrincipal);
+  padding: 30px 15px 0 15px;
+}
+.debilidades {
+  font-family: var(--typoTitle);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 2.05;
+  text-align: center;
+  color: var(--colorPrincipal);
+  padding: 30px 15px 0 15px;
+}
+/* Class p-equip */
+.p-equipo {
+  margin: auto;
+  font-family: var(--typoText);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--colorContrast3);
+  position: relative;
+  padding: 30px 15px;
+}
+
+.sectionteam {
+  background-color: var(--colorContrast2Transparent);
+  padding: 0%;
+  border: 0px solid #b8b8b9;
+  width: auto;
+}
+
+/* Class p-fortalezas */
+.p-fortalezas {
+  margin: auto;
+  font-family: var(--typoText);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--colorContrast3);
+  padding: 0 15px;
+}
+/* Class p-debilidades */
+.p-debilidades {
+  margin: auto;
+  font-family: var(--typoText);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--colorContrast3);
+  padding: 0 15px 30px;
+}
