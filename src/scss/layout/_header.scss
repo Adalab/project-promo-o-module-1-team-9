@@ -1,21 +1,26 @@
 /* HEADER */
-
 .header-container {
-  // height: 421px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  position: relative;
-  margin-bottom: 0;
+  width: 100%;
+  height: 460px;
+  @media (min-width: 768px) {
+    height: 421px;
+    margin-bottom: 30px;
+  }
 }
 
 /* Header: group's name */
 .header-fix {
+  width: 100%;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 999;
-  width: 100%;
+  @media (min-width: 768px) {
+    background-color: var(--colorPrincipalTransparent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .group-name {
@@ -23,23 +28,47 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.header-container h1 {
   font-family: var(--typoTitle);
   color: var(--colorContrast1);
   font-size: 16px;
   line-height: 30px;
   padding: 15px 80px;
+
+  @media (min-width: 768px) {
+    background-color: transparent;
+    padding: 15px 0;
+    margin-left: 45px;
+
+    height: 60px;
+    line-height: 30px;
+  }
+  @media (min-width: 1200px) {
+    margin-left: 142px;
+  }
 }
 
 /* Header: sections */
-
+.menu-bar {
+  @media (min-width: 768px) {
+    width: 300px;
+    margin-right: 45px;
+  }
+  @media (min-width: 1200px) {
+    margin-right: 142px;
+  }
+}
 .menu-container {
   background-color: var(--colorSecondaryTransparent);
   display: flex;
   justify-content: space-evenly;
   padding: 8px 0;
+
+  @media (min-width: 768px) {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .menu-item {
@@ -64,10 +93,17 @@
   height: 421px;
   width: 100%;
   background-size: cover;
-  background-image: url(../images/logo6.jpg);
+  // background-image: url(../images/nameLogo.jpg);
   background-repeat: no-repeat;
+  background-position: center center;
   margin-bottom: 0;
   padding-bottom: 0;
+  .img-index {
+    background-image: url("../images/nameLogo.jpg");
+  }
+  .img-contact {
+    background-image: url("../images/contact.jpg");
+  }
 }
 
 /* Header: hero */
@@ -85,8 +121,21 @@
   position: relative;
   z-index: 993;
   transform: translateY(-48%);
+
+  @media (min-width: 768px) {
+    margin-left: 46px;
+    transform: translate(0, -100%);
+    padding: 15px 30px;
+    width: 35.875rem;
+    height: 5rem;
+    opacity: 0.8;
+  }
 }
 
 .hero p {
   text-align: center;
+}
+
+.hidden-hero {
+  display: none;
 }

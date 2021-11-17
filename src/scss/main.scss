@@ -7,20 +7,6 @@
 @import "pages/team";
 
 @media all and (min-width: 768px) {
-  /* Responsive: header */
-  .header-fix {
-    background-color: var(--colorPrincipalTransparent);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .group-name {
-    background-color: transparent;
-  }
-  .menu-container {
-    background-color: transparent;
-  }
-
   /* Responsive: Contact-us */
   .noelia:first-of-type {
     display: flex;
