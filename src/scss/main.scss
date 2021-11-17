@@ -196,6 +196,11 @@ a {
   border: 0px solid #b8b8b9;
   width: auto;
 }
+.divider {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 /* Class p-fortalezas */
 .p-fortalezas {
   margin: auto;
