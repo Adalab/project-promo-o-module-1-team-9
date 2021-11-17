@@ -143,6 +143,96 @@
   margin-top: 15px;
 }
 
+/* Responsive: Contact-us */
+
+@media (min-width: $tablet) {
+  .noelia {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .member-noelia {
+    display: inline;
+    width: auto;
+  }
+  .noelia-description {
+    margin-right: 44px;
+    width: 443px;
+    text-align: left;
+  }
+
+  .photo-noelia {
+    margin-top: 41px;
+    width: 206px;
+    height: 206px;
+    position: absolute;
+    float: left;
+    margin-left: 43px;
+  }
+  .natalia {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .natalia-description {
+    margin-right: 44px;
+    width: 443px;
+    text-align: right;
+    margin-left: 44px;
+  }
+  .photo-natalia {
+    margin-top: 41px;
+    width: 206px;
+    height: 206px;
+    position: absolute;
+    right: 45px;
+    float: right;
+    margin-left: 43px;
+  }
+  .alejandra {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .member-alejandra {
+    display: inline;
+  }
+
+  .alejandra-description {
+    margin-right: 44px;
+    width: 443px;
+    text-align: left;
+  }
+  .photo-alejandra {
+    margin-top: 41px;
+    width: 206px;
+    height: 206px;
+    position: absolute;
+    float: left middle;
+    margin-left: 43px;
+  }
+  .paula {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .paula-description {
+    margin-right: 44px;
+    width: 443px;
+    margin-left: 44px;
+    text-align: right;
+  }
+  .photo-paula {
+    margin-top: 41px;
+    width: 206px;
+    height: 206px;
+    position: absolute;
+    right: 45px;
+    float: right;
+    margin-left: 43px;
+  }
+}
+
 // .contact-background {
 //   height: 421px;
 //   width: 100%;
