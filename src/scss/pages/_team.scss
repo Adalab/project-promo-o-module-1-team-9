@@ -49,7 +49,6 @@
 }
 /* Class p-equip */
 .p-equipo {
-  margin: auto;
   font-family: var(--typoText);
   font-size: 16px;
   line-height: 1.5;
@@ -86,3 +85,78 @@
   color: var(--colorContrast3);
   padding: 0 15px 30px;
 }
+@media all and (min-width: 768px) {
+  #strengthandwaeknesses {
+    display: flex;
+    flex-direction: row;
+  }
+  .p-equipo {
+    margin-left: 45px;
+    margin-right: 45px;
+    opacity: 67%;
+  }
+  .p-debilidades {
+    margin-right: 45px;
+  }
+  .p-fortalezas {
+    margin-left: 45px;
+  }
+}
+@media all and (min-width: 1020px) {
+  .p-equipo {
+    margin-left: 300px;
+    margin-right: 300px;
+    opacity: 67%;
+  }
+  .p-debilidades {
+    margin-right: 138px;
+  }
+  .p-fortalezas {
+    margin-left: 138px;
+  }
+}
+
+/*
+@media all and (min-width: 768px) {
+  .p-equipo {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+  .p-fortalezas {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+  .p-debilidades {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+  
+  .sectionteam {
+    display: flex;
+    flex-direction: column;
+  }
+  .fortalezas {
+    display: flex;
+    flex-direction: column;
+  }
+  .debilidades {
+    display: flex;
+    flex-direction: column;
+  }
+  .p-fortalezas {
+    padding-left: 45px;
+    padding-top: 45px;
+    margin-left: 57px;
+    float: left;
+    position: relative;
+    width: 50%;
+  }
+  .fortalezas {
+    padding-left: 45px;
+    padding-top: 45px;
+    padding-bottom: 15px;
+    margin-left: 57px;
+    float: left;
+    position: relative;
+    width: 50%;
+  }*/
