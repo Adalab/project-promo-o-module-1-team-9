@@ -199,11 +199,7 @@ a {
   border: 0px solid #b8b8b9;
   width: auto;
 }
-.divider {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
+
 /* Class p-fortalezas */
 .p-fortalezas {
   margin: auto;
@@ -578,12 +574,6 @@ a {
   }
   .menu-container {
     background-color: transparent;
-  }
-  .divider {
-    display: flex;
-    flex-direction: row;
-    margin-left: 45px;
-    margin-right: 45px;
   }
 
   /* Responsive: Contact-us */
