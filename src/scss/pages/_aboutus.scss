@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
-  font-family: var(--typoText);
+  font-family: $typoText;
 }
 .who-we-are {
   margin-top: 30px;
@@ -12,8 +12,8 @@
   height: 45px;
   margin-left: auto;
   margin-right: auto;
-  color: var(--colorPrincipal);
-  font-family: var(--typoTitle);
+  color: $colorPrincipal;
+  font-family: $typoTitle;
   font-size: 24px;
   font-weight: 500;
   font-stretch: normal;
@@ -39,7 +39,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 4px;
-  border: solid 5px var(--ColorContrast4Transparent);
+  border: solid 5px $ColorContrast4Transparent;
 }
 
 /* Natalia's photo */
@@ -50,7 +50,7 @@
   width: 180px;
   height: 180px;
   border-radius: 4px;
-  border: solid 5px var(--ColorContrast4Transparent);
+  border: solid 5px $ColorContrast4Transparent;
 }
 
 .img-natalia {
@@ -67,7 +67,7 @@
   margin-top: 30px;
   height: 180px;
   border-radius: 4px;
-  border: solid 5px var(--ColorContrast4Transparent);
+  border: solid 5px $ColorContrast4Transparent;
 }
 .img-paula {
   width: 100%;
@@ -83,7 +83,7 @@
   width: 180px;
   height: 180px;
   border-radius: 4px;
-  border: solid 5px var(--ColorContrast4Transparent);
+  border: solid 5px $ColorContrast4Transparent;
 }
 
 .img-alejandra {
@@ -97,7 +97,7 @@
   height: 45px;
   margin-left: auto;
   margin-right: auto;
-  font-family: var(--typoText);
+  font-family: $typoText;
   font-size: 20px;
   font-weight: 400;
   font-stretch: normal;
@@ -105,7 +105,7 @@
   line-height: 2.25;
   letter-spacing: normal;
   text-align: center;
-  color: var(--ColorContrast4);
+  color: $ColorContrast4;
 }
 
 .description {
@@ -113,7 +113,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 15 px;
-  font-family: var(--typoText);
+  font-family: $typoText;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -121,7 +121,7 @@
   line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
-  color: var(--colorContrast3);
+  color: $colorContrast3;
 }
 .about__nav {
   width: 124px;
@@ -130,7 +130,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  color: var(--colorPrincipal);
+  color: $colorPrincipal;
   text-align: center;
   letter-spacing: normal;
   line-height: 1.88;

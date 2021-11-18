@@ -3,45 +3,47 @@
 .footer {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0 45px;
   border-top: 1px solid var(--colorContrast2);
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     flex-direction: row;
-    
   }
 }
-.name-in-footer {
-  width: 172px;
-  height: 20px;
-  margin: 30px auto 20px auto;
-  font-family: var(--typoText);
+.footer__caption {
+  // width: 172px;
+  // height: 20px;
+  // margin: 30px auto 20px auto;
+  font-family: $typoText;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.43;
+  // line-height: 1.43;
   letter-spacing: normal;
   color: var(--colorContrast2);
-  text-align: center;
-  @media (min-width: 768px) {
+  // text-align: center;
+  margin-bottom: 20px;
+  @media (min-width: $tablet) {
     order: -2;
   }
 }
 
-.footer-menu {
-  width: 114px;
-  height: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: var(--typoText);
+.footer__menu {
+  // width: 114px;
+  // height: 60px;
+  // margin-left: auto;
+  // margin-right: auto;
+  font-family: $typoText;
   font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.43;
+  // line-height: 1.43;
   letter-spacing: normal;
-  text-align: center;
-  color: var(--colorContrast3Transparent);
+  // text-align: center;
+  color: $colorContrast3Transparent;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -50,27 +52,23 @@
 }
 .footer-a {
   text-align: center;
-  color: var(--colorContrast3Transparent);
+  color: $colorContrast3Transparent;
 }
 
-.last-article {
-  margin-bottom: 45px;
-}
 
-.adalab-logo {
-  /* padding-top: 30px; */
+.footer__logo {
   width: 116px;
   height: 45px;
-  margin-left: auto;
-  margin-right: auto;
-  object-fit: cover;
-  margin-bottom: 45px;
-  @media (min-width: 768px) {
+  // margin-left: auto;
+  // margin-right: auto;
+  // margin-bottom: 45px;
+  @media (min-width: $tablet) {
     order: -1;
+    align-self: flex-start;
   }
 }
 
-.adalab {
+.footer__logo--img {
   width: 100%;
   object-fit: cover;
 }
