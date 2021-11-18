@@ -5,25 +5,24 @@
   flex-direction: column;
   justify-content: space-around;
   border-top: 1px solid var(--colorContrast2);
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     flex-direction: row;
-    
   }
 }
 .name-in-footer {
   width: 172px;
   height: 20px;
   margin: 30px auto 20px auto;
-  font-family: var(--typoText);
+  font-family: $typoText;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.43;
   letter-spacing: normal;
-  color: var(--colorContrast2);
+  color: $colorContrast2;
   text-align: center;
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     order: -2;
   }
 }
@@ -33,7 +32,7 @@
   height: 60px;
   margin-left: auto;
   margin-right: auto;
-  font-family: var(--typoText);
+  font-family: $typoText;
   font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
@@ -41,7 +40,7 @@
   line-height: 1.43;
   letter-spacing: normal;
   text-align: center;
-  color: var(--colorContrast3Transparent);
+  color: $colorContrast3Transparent;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -50,7 +49,7 @@
 }
 .footer-a {
   text-align: center;
-  color: var(--colorContrast3Transparent);
+  color: $colorContrast3Transparent;
 }
 
 .last-article {
@@ -65,7 +64,7 @@
   margin-right: auto;
   object-fit: cover;
   margin-bottom: 45px;
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     order: -1;
   }
 }
