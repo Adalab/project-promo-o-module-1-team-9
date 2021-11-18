@@ -25,7 +25,7 @@
   padding-top: 30px;
   padding-bottom: 15px;
   margin: auto;
-  font-family: var(--typoTitle);
+  font-family: $typoTitle;
   font-size: 24px;
   font-weight: 500;
   font-stretch: normal;
@@ -34,16 +34,16 @@
   letter-spacing: normal;
   text-align: center;
   text-transform: uppercase;
-  color: var(--colorSecondary);
+  color: $colorSecondary;
 }
 
 .contact-p {
   margin: auto;
-  font-family: var(--typoText);
+  font-family: $typoText;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: var(--colorContrast3);
+  color: $colorContrast3;
   position: relative;
   padding: 0 15px 58px 15px;
 }
@@ -54,7 +54,7 @@
 }
 
 .contact-form {
-  font-family: var(--typoText);
+  font-family: $typoText;
   display: flex;
   flex-direction: column;
   font-size: 0.875rem;
@@ -81,7 +81,7 @@
 // }
 
 #message {
-  font-family: var(--typoText);
+  font-family: $typoText;
 }
 
 .contact-form textarea {
@@ -94,7 +94,7 @@
 }
 
 .highlight {
-  color: var(--colorSecondary);
+  color: $colorSecondary;
 }
 
 .send-button .button .send {
