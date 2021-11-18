@@ -6,15 +6,15 @@
 
 /* Main: section team*/
 
+#team {
+  padding: 30px 15px 45px;
+}
+
 .equipo {
-  margin: auto;
   font-family: var(--typoTitle);
   font-size: 24px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.88;
-  letter-spacing: normal;
   text-align: center;
   color: var(--colorSecondary);
 }
@@ -27,6 +27,13 @@
   position: relative;
   left: 47%;
   top: 15px;
+}
+
+.sectionteam {
+  background-color: var(--colorContrast2Transparent);
+  padding: 0%;
+  border: 0px solid #b8b8b9;
+  width: auto;
 }
 
 .fortalezas {
@@ -58,13 +65,6 @@
   padding: 30px 15px;
 }
 
-.sectionteam {
-  background-color: var(--colorContrast2Transparent);
-  padding: 0%;
-  border: 0px solid #b8b8b9;
-  width: auto;
-}
-
 /* Class p-fortalezas */
 .p-fortalezas {
   margin: auto;
@@ -89,6 +89,8 @@
   #strengthandwaeknesses {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .p-equipo {
     margin-left: 45px;
