@@ -1,19 +1,18 @@
-:root {
-  /* Colors */
-  --colorPrincipal: #099d8d;
-  --colorPrincipalTransparent: rgba(9, 159, 144, 0.808);
-  --colorSecondary: #14d9c4;
-  --colorSecondaryTransparent: #14d9c5c9;
-  --colorContrast1: #fff;
-  --colorContrast2: #b8b8b9;
-  --colorContrast2Transparent: #b8b8b933;
-  --colorContrast3: #54585a;
-  --colorContrast3Transparent: #54585abf;
-  --ColorContrast4: #000;
-  --ColorContrast4Transparent: rgba(0, 0, 0, 0.08);
-  /* Typographys */
-  --typoTitle: "Rubik", sans-serif;
-  --typoText: "Open Sans", sans-serif;
-}
+/* Colors */
+$colorPrincipal: #099d8d;
+$colorPrincipalTransparent: rgba(9, 159, 144, 0.808);
+$colorSecondary: #14d9c4;
+$colorSecondaryTransparent: #14d9c5c9;
+$colorContrast1: #fff;
+$colorContrast2: #b8b8b9;
+$colorContrast2Transparent: #b8b8b933;
+$colorContrast3: #54585a;
+$colorContrast3Transparent: #54585abf;
+$ColorContrast4: #000;
+$ColorContrast4Transparent: rgba(0, 0, 0, 0.08);
+/* Typographys */
+$typoTitle: "Rubik", sans-serif;
+$typoText: "Open Sans", sans-serif;
+/* Responsive */
 $tablet: 768px;
 $desktop: 1200px;
