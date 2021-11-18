@@ -6,22 +6,43 @@
 
 /* Main: section team*/
 
-#team {
-  padding: 30px 15px 45px;
+.team-wrapper {
+  padding: 30px 15px 0 15px;
+
+  @media (min-width: $tablet) {
+    padding: 0px 45px 40px 45px;
+  }
+  @media (min-width: $desktop) {
+    max-width: 1200px;
+    margin: 0 138px;
+    padding: 0;
+  }
 }
 
 .equipo {
-<<<<<<< HEAD
-  font-family: var(--typoTitle);
-=======
   margin: auto;
   font-family: $typoTitle;
->>>>>>> f0082f882a13677862c9519441dfc67660f92906
   font-size: 24px;
   font-weight: 500;
   line-height: 1.88;
   text-align: center;
   color: $colorSecondary;
+}
+.p-equipo {
+  font-family: $typoText;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: $colorContrast3;
+  position: relative;
+  margin-top: 15px;
+  @media all and (min-width: $tablet) {
+    opacity: 67%;
+    text-align: center;
+  }
+  @media (min-width: $desktop) {
+    opacity: 67%;
+  }
 }
 
 .divider {
@@ -32,13 +53,47 @@
   position: relative;
   left: 47%;
   top: 15px;
+  @media (min-width: $tablet) {
+    margin: auto;
+    transform: translate(0, 50%) rotate(45 deg);
+  }
 }
 
-.sectionteam {
-  background-color: var(--colorContrast2Transparent);
-  padding: 0%;
-  border: 0px solid #b8b8b9;
+#strengthandwaeknesses {
+  background-color: $colorContrast2Transparent;
+  padding: 30px 15px 45px 15px;
+  // border: 0px solid #b8b8b9;
   width: auto;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    padding: 45px 0 60px 0;
+  }
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    padding: 45px 138px 60px 138px;
+  }
+}
+
+// Equipo
+.sectionteam {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+// Fortalezas
+
+.sectionteam__teamstrengths {
+  @media (min-width: $tablet) {
+    padding: 0;
+    padding-left: 45px;
+    width: 50%;
+  }
+  @media (min-width: $tablet) {
+  }
 }
 
 .fortalezas {
@@ -48,7 +103,42 @@
   line-height: 2.05;
   text-align: center;
   color: $colorPrincipal;
-  padding: 30px 15px 0 15px;
+  padding: 0;
+  @media (min-width: $tablet) {
+    margin-right: 22px;
+    // width: 50%;
+  }
+  // @media all and (min-width: $desktop) {
+
+  // }
+}
+.p-fortalezas {
+  margin: auto;
+  font-family: $typoText;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: $colorContrast3;
+
+  @media (min-width: $tablet) {
+    margin-right: 25px;
+    // width: 50%;
+    text-align: center;
+  }
+  // @media all and (min-width: $desktop) {
+
+  // }
+}
+
+// Debilidades
+.sectionteam__teamweakness {
+  @media (min-width: $tablet) {
+    padding: 0px 45px;
+    width: 50%;
+  }
+  @media (min-width: $desktop) {
+    padding: 0px 45px;
+  }
 }
 .debilidades {
   font-family: $typoTitle;
@@ -57,37 +147,17 @@
   line-height: 2.05;
   text-align: center;
   color: $colorPrincipal;
-  padding: 30px 15px 0 15px;
-}
-/* Class p-equip */
-.p-equipo {
-  font-family: $typoText;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: $colorContrast3;
-  position: relative;
-  padding: 30px 15px;
+  padding-top: 30px;
+  @media (min-width: $tablet) {
+    padding: 0;
+    // margin-left: 6px;
+    // width: 50%;
+  }
+  // @media all and (min-width: $desktop) {
+
+  // }
 }
 
-.sectionteam {
-  background-color: $colorContrast2Transparent;
-  padding: 0%;
-  border: 0px solid #b8b8b9;
-  width: auto;
-}
-
-/* Class p-fortalezas */
-.p-fortalezas {
-  margin: auto;
-  font-family: $typoText;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: $colorContrast3;
-  padding: 0 15px;
-}
-/* Class p-debilidades */
 .p-debilidades {
   margin: auto;
   font-family: $typoText;
@@ -95,42 +165,44 @@
   line-height: 1.5;
   text-align: center;
   color: $colorContrast3;
-  padding: 0 15px 30px;
+  padding: 0 15px 45px 15px;
+  @media all and (min-width: $tablet) {
+    padding: 0;
+    text-align: center;
+  }
+  // @media (min-width: $desktop) {
+  //   text-align: center;
+  // }
 }
-@media all and (min-width: $tablet) {
-  #strengthandwaeknesses {
+/*@media all and (min-width: $tablet) {
+
+  .fortalezas {
+    display: flex;
+    flex-direction: row;
+  }
+  .debilidades {
+    display: flex;
+    flex-direction: row;
+  }
+  .p-equipo {
+    margin-left: 45px;
+    margin-right: 45px;
+    opacity: 67%;
+  }
+  .p-debilidades {
+    margin-right: 45px;
+  }
+  .p-fortalezas {
+    margin-left: 45px;
+  }
+}*/
+
+/* #strengthandwaeknesses {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  .p-equipo {
-    margin-left: 45px;
-    margin-right: 45px;
-    opacity: 67%;
-  }
-  .p-debilidades {
-    margin-right: 45px;
-  }
-  .p-fortalezas {
-    margin-left: 45px;
-  }
-}
-@media all and (min-width: $desktop) {
-  .p-equipo {
-    margin-left: 300px;
-    margin-right: 300px;
-    opacity: 67%;
-  }
-  .p-debilidades {
-    margin-right: 138px;
-  }
-  .p-fortalezas {
-    margin-left: 138px;
-  }
-}
-
-/*
 @media all and (min-width: 768px) {
   .p-equipo {
     margin-left: 45px;
