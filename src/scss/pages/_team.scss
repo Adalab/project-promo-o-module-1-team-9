@@ -49,13 +49,13 @@
   width: 30px;
   height: 30px;
   background-color: $colorContrast1;
-  transform: rotate(45deg);
+  transform: rotate(45deg) translate(0, 50%);
   position: relative;
-  left: 47%;
-  top: 15px;
+  margin: auto;
+
   @media (min-width: $tablet) {
-    margin: auto;
-    transform: translate(0, 50%) rotate(45 deg);
+    transform: translate(0, 50%) rotate(45deg);
+    top: 20px;
   }
 }
 
@@ -88,11 +88,9 @@
 
 .sectionteam__teamstrengths {
   @media (min-width: $tablet) {
-    padding: 0;
-    padding-left: 45px;
+    padding: 0 45px;
+    // padding-left: 45px;
     width: 50%;
-  }
-  @media (min-width: $tablet) {
   }
 }
 
@@ -105,7 +103,6 @@
   color: $colorPrincipal;
   padding: 0;
   @media (min-width: $tablet) {
-    margin-right: 22px;
     // width: 50%;
   }
   // @media all and (min-width: $desktop) {
@@ -121,23 +118,19 @@
   color: $colorContrast3;
 
   @media (min-width: $tablet) {
-    margin-right: 25px;
-    // width: 50%;
-    text-align: center;
+    padding-top: 10px;
   }
-  // @media all and (min-width: $desktop) {
 
-  // }
+  @media (min-width: $desktop) {
+    width: 80%;
+  }
 }
 
 // Debilidades
 .sectionteam__teamweakness {
   @media (min-width: $tablet) {
-    padding: 0px 45px;
+    padding: 0 45px;
     width: 50%;
-  }
-  @media (min-width: $desktop) {
-    padding: 0px 45px;
   }
 }
 .debilidades {
@@ -150,12 +143,7 @@
   padding-top: 30px;
   @media (min-width: $tablet) {
     padding: 0;
-    // margin-left: 6px;
-    // width: 50%;
   }
-  // @media all and (min-width: $desktop) {
-
-  // }
 }
 
 .p-debilidades {
@@ -165,14 +153,16 @@
   line-height: 1.5;
   text-align: center;
   color: $colorContrast3;
-  padding: 0 15px 45px 15px;
+  padding: 0 15px;
   @media all and (min-width: $tablet) {
     padding: 0;
+    padding-top: 10px;
     text-align: center;
+    // width: 50%;
   }
-  // @media (min-width: $desktop) {
-  //   text-align: center;
-  // }
+  @media (min-width: $desktop) {
+    width: 80%;
+  }
 }
 /*@media all and (min-width: $tablet) {
 
