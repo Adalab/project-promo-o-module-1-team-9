@@ -7,15 +7,15 @@
 /* Main: section team*/
 
 .team-wrapper {
+  text-align: center;
   padding: 30px 15px 0 15px;
 
   @media (min-width: $tablet) {
-    padding: 0px 45px 40px 45px;
+    padding: 45px 45px 20px 45px;
   }
   @media (min-width: $desktop) {
-    max-width: 1200px;
-    margin: 0 138px;
-    padding: 0;
+    margin: 0 300px;
+    padding-top: 45px;
   }
 }
 
