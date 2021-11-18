@@ -74,13 +74,13 @@
 
 .menu-item {
   list-style-type: none;
-}
-.menu-item a {
-  text-decoration: none;
-  color: $colorContrast1;
-  font-family: $typoTitle;
-  font-size: 15px;
-  line-height: 30px;
+  a {
+    text-decoration: none;
+    color: $colorContrast1;
+    font-family: $typoTitle;
+    font-size: 15px;
+    line-height: 30px;
+  }
 }
 
 .link-team,
