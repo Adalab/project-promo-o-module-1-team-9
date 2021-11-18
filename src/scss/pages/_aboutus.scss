@@ -143,17 +143,30 @@
   margin-top: 15px;
 }
 
-/* Responsive: Contact-us */
+/* Responsive: tablet */
 
 @media (min-width: $tablet) {
   .noelia {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    text-align: start;
   }
+
+  .about__section--descriptionl {
+    margin-left: 281px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .about__section--descriptionr {
+    margin-right: 281px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .member-noelia {
-    display: inline;
-    width: auto;
+    grid-column: 1/2;
+    padding: 0 0px;
   }
   .noelia-description {
     margin-right: 44px;
@@ -173,6 +186,10 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+  .member-natalia {
+    grid-column: 3/4;
+    padding: 0 0px;
   }
   .natalia-description {
     margin-right: 44px;
@@ -195,7 +212,8 @@
     flex-wrap: wrap;
   }
   .member-alejandra {
-    display: inline;
+    grid-column: 1/2;
+    padding: 0 0px;
   }
 
   .alejandra-description {
@@ -215,6 +233,10 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+  .member-paula {
+    grid-column: 3/4;
+    padding: 0 0px;
   }
   .paula-description {
     margin-right: 44px;
