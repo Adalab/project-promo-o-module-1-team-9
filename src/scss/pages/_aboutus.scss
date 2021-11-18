@@ -123,9 +123,10 @@
   text-align: center;
   color: $colorContrast3;
 }
-.social-media-link {
+.about__nav {
   width: 124px;
   height: 30px;
+  padding: 0px 5px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -143,7 +144,7 @@
   margin-top: 15px;
 }
 
-/* Responsive: Contact-us */
+/* Responsive: tablet */
 
 @media (min-width: $tablet) {
   .noelia {
@@ -151,9 +152,22 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
+
+  .about__section--descriptionl {
+    margin-left: 281px;
+    text-align: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .about__section--descriptionr {
+    margin-right: 281px;
+    padding: 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .member-noelia {
-    display: inline;
-    width: auto;
+    grid-column: 1/2;
   }
   .noelia-description {
     margin-right: 44px;
@@ -173,6 +187,10 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+  .member-natalia {
+    grid-column: 3/4;
+    padding: 0 0px;
   }
   .natalia-description {
     margin-right: 44px;
@@ -195,7 +213,8 @@
     flex-wrap: wrap;
   }
   .member-alejandra {
-    display: inline;
+    grid-column: 1/2;
+    padding: 0 0px;
   }
 
   .alejandra-description {
@@ -216,6 +235,10 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
+  .member-paula {
+    grid-column: 3/4;
+    padding: 0 0px;
+  }
   .paula-description {
     margin-right: 44px;
     width: 443px;
@@ -230,6 +253,24 @@
     right: 45px;
     float: right;
     margin-left: 43px;
+  }
+  .about__nav--right {
+    margin-right: 281px;
+    padding: 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .about__nav--left {
+    margin-left: 281px;
+    padding: 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .nav-iconsl {
+    grid-column: 1/2;
+  }
+  .nav-iconsr {
+    grid-column: 3/4;
   }
 }
 
