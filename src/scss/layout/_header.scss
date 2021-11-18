@@ -98,12 +98,12 @@
   background-position: center center;
   margin-bottom: 0;
   padding-bottom: 0;
-  .imgIndex {
-    background-image: url("./images/nameLogo.jpg");
-  }
-  .imgContact {
-    background-image: url("../images/contact.jpg");
-  }
+}
+.imgIndex {
+  background-image: url("../images/nameLogo.jpg");
+}
+.imgContact {
+  background-image: url("../images/contact.jpg");
 }
 
 /* Header: hero */
@@ -130,12 +130,11 @@
     height: 5rem;
     opacity: 0.8;
   }
+  & p {
+    text-align: center;
+  }
 }
 
-.hero p {
-  text-align: center;
-}
-
-.hidden-hero {
+.hiddenHero {
   display: none;
 }
