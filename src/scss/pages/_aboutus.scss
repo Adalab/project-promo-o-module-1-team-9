@@ -93,7 +93,6 @@
 }
 
 .member {
-  width: 100%;
   height: 45px;
   margin-left: auto;
   margin-right: auto;
@@ -140,12 +139,7 @@
   line-height: 1.88;
 }
 .about__nav {
-  height: 30px;
-  margin-bottom: 30px;
   color: $colorPrincipal;
-
-  letter-spacing: normal;
-  line-height: 1.88;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -154,323 +148,156 @@
 
 /* Responsive: tablet */
 
-// @media (min-width: $tablet) {
-//   .noelia {
-//     display: flex;
-//     flex-direction: column;
-//     flex-wrap: wrap;
-//   }
+@media (min-width: $tablet) {
+  .member__left {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-right: 45px;
+    margin-bottom: 30px;
+  }
+  .member__right {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-left: 45px;
+    margin-bottom: 30px;
+    & .photo-paula {
+      order: 2;
+    }
+    & .about__member {
+      order: 1;
+    }
+    & .photo-natalia {
+      order: 2;
+    }
+  }
+  .about__member {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    & .about__h4--left {
+      margin-left: 0px;
+      text-align: left;
+    }
+    & .about__h4--right {
+      margin-right: 0px;
+      text-align: right;
+    }
+    & .description {
+      text-align: left;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    & .paula-description {
+      text-align: right;
+    }
+    & .natalia-description {
+      text-align: right;
+    }
+    .nav-iconsR {
+      margin-left: auto;
+    }
+  }
+  .photo-noelia {
+    width: 205px;
+    height: 205px;
+    margin-right: 31px;
+    margin-left: 29px;
+  }
+  .photo-natalia {
+    width: 205px;
+    height: 205px;
+    margin-left: 31px;
+    margin-right: 29px;
+  }
+  .photo-alejandra {
+    width: 205px;
+    height: 205px;
+    margin-right: 31px;
+    margin-left: 29px;
+  }
+  .photo-paula {
+    width: 205px;
+    height: 205px;
+    margin-left: 31px;
+    margin-right: 29px;
+  }
+}
 
-//   .about__section--descriptionl {
-//     margin-left: 281px;
-//     text-align: start;
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//   }
-//   .about__section--descriptionr {
-//     margin-right: 281px;
-//     padding: 0px 0px;
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//   }
+// Responsive: Desktop
 
-//   .member-noelia {
-//     grid-column: 1/2;
-//   }
-//   .noelia-description {
-//     margin-right: 44px;
-//     width: 443px;
-//     text-align: left;
-//   }
-
-//   .photo-noelia {
-//     margin-top: 41px;
-//     width: 206px;
-//     height: 206px;
-//     position: absolute;
-//     float: left;
-//     margin-left: 43px;
-//   }
-//   .natalia {
-//     display: flex;
-//     flex-direction: column;
-//     flex-wrap: wrap;
-//   }
-//   .member-natalia {
-//     grid-column: 3/4;
-//     padding: 0 0px;
-//   }
-//   .natalia-description {
-//     margin-right: 44px;
-//     width: 443px;
-//     text-align: right;
-//     margin-left: 44px;
-//   }
-//   .photo-natalia {
-//     margin-top: 41px;
-//     width: 206px;
-//     height: 206px;
-//     position: absolute;
-//     right: 45px;
-//     float: right;
-//     margin-left: 43px;
-//   }
-//   .alejandra {
-//     display: flex;
-//     flex-direction: column;
-//     flex-wrap: wrap;
-//   }
-//   .member-alejandra {
-//     grid-column: 1/2;
-//     padding: 0 0px;
-//   }
-
-//   .alejandra-description {
-//     margin-right: 44px;
-//     width: 443px;
-//     text-align: left;
-//   }
-//   .photo-alejandra {
-//     margin-top: 41px;
-//     width: 206px;
-//     height: 206px;
-//     position: absolute;
-//     float: left middle;
-//     margin-left: 43px;
-//   }
-//   .paula {
-//     display: flex;
-//     flex-direction: column;
-//     flex-wrap: wrap;
-//   }
-//   .member-paula {
-//     grid-column: 3/4;
-//     padding: 0 0px;
-//   }
-//   .paula-description {
-//     margin-right: 44px;
-//     width: 443px;
-//     margin-left: 44px;
-//     text-align: right;
-//   }
-//   .photo-paula {
-//     margin-top: 41px;
-//     width: 206px;
-//     height: 206px;
-//     position: absolute;
-//     right: 45px;
-//     float: right;
-//     margin-left: 43px;
-//   }
-//   .about__nav--right {
-//     margin-right: 281px;
-//     padding: 0px 0px;
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//   }
-//   .about__nav--left {
-//     margin-left: 281px;
-//     padding: 0px 0px;
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//   }
-//   .nav-iconsl {
-//     grid-column: 1/2;
-//   }
-//   .nav-iconsr {
-//     grid-column: 3/4;
-//   }
-// }
-// @media (min-width: $desktop) {
-//   .noelia {
-//     display: flex;
-//     flex-direction: column;
-//     flex-wrap: wrap;
-//   }
-
-//   .about__section--descriptionl {
-//     margin-left: 461px;
-//     text-align: start;
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//   }
-//   .about__section--descriptionr {
-//     margin-right: 461px;
-//     padding: 0px 0px;
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//   }
-
-//   .member-noelia {
-//     grid-column: 1/2;
-//   }
-//   .noelia-description {
-//     margin-right: 300px;
-//     margin-left: 461px;
-//     width: 440px;
-//     text-align: left;
-//   }
-
-//   .photo-noelia {
-//     margin-top: 41px;
-//     width: 206px;
-//     height: 206px;
-//     position: absolute;
-//     float: left;
-//     margin-left: 43px;
-//   }
-//   .natalia {
-//     display: flex;
-//     flex-direction: column;
-//     flex-wrap: wrap;
-//   }
-//   .member-natalia {
-//     grid-column: 3/4;
-//     padding: 0 0px;
-//   }
-//   .natalia-description {
-//     margin-left: 300px;
-//     width: 440px;
-//     text-align: right;
-//     margin-left: 44px;
-//   }
-//   .photo-natalia {
-//     margin-top: 41px;
-//     width: 206px;
-//     height: 206px;
-//     position: absolute;
-//     right: 45px;
-//     float: right;
-//     margin-left: 43px;
-//   }
-//   .alejandra {
-//     display: flex;
-//     flex-direction: column;
-//     flex-wrap: wrap;
-//   }
-//   .member-alejandra {
-//     grid-column: 1/2;
-//     padding: 0 0px;
-//   }
-
-//   .alejandra-description {
-//     margin-right: 300px;
-//     width: 440px;
-//     text-align: left;
-//   }
-//   .photo-alejandra {
-//     margin-top: 41px;
-//     width: 206px;
-//     height: 206px;
-//     position: absolute;
-//     float: left middle;
-//     margin-left: 43px;
-//   }
-//   .paula {
-//     display: flex;
-//     flex-direction: column;
-//     flex-wrap: wrap;
-//   }
-//   .member-paula {
-//     grid-column: 3/4;
-//     padding: 0 0px;
-//   }
-//   .paula-description {
-//     margin-left: 300px;
-//     width: 440px;
-//     margin-left: 44px;
-//     text-align: right;
-//   }
-//   .photo-paula {
-//     margin-top: 41px;
-//     width: 206px;
-//     height: 206px;
-//     position: absolute;
-//     right: 45px;
-//     float: right;
-//     margin-left: 43px;
-//   }
-//   .about__nav--right {
-//     margin-right: 281px;
-//     padding: 0px 0px;
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//   }
-//   .about__nav--left {
-//     margin-left: 281px;
-//     padding: 0px 0px;
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//   }
-//   .nav-iconsl {
-//     grid-column: 1/2;
-//   }
-//   .nav-iconsr {
-//     grid-column: 3/4;
-//   }
-// }
-
-// .contact-background {
-//   height: 421px;
-//   width: 100%;
-//   background-size: cover;
-//   background-image: url(../images/contact.jpg);
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   margin-bottom: 0;
-//   padding-bottom: 0;
-// }
-
-// .contact-title {
-//   margin: auto;
-//   font-family: var(--typoTitle);
-//   font-size: 24px;
-//   font-weight: 500;
-//   font-stretch: normal;
-//   font-style: normal;
-//   line-height: 1.88;
-//   letter-spacing: normal;
-//   text-align: center;
-//   text-transform: uppercase;
-//   color: var(--colorSecondary);
-//   padding-top: 45px;
-// }
-
-// .contact-p {
-//   margin: auto;
-//   font-family: var(--typoText);
-//   font-size: 16px;
-//   line-height: 1.5;
-//   text-align: center;
-//   color: var(--colorContrast3);
-//   position: relative;
-//   padding: 15px 15px 58px;
-// }
-
-// .contact-form {
-//   font-family: var(--typoText);
-//   display: flex;
-//   flex-direction: column;
-//   padding: 0 15px;
-// }
-
-// .contact-form-container {
-//   display: flex;
-//   flex-direction: column;
-
-// }
-
-// .contact-form-item {
-//   margin: 5px 0 15px 0;
-//   padding: 11px 15px 15px 15px;
-// }
-
-// #message {
-//   font-family: var(--typoText);
-// }
-
-// .highlight {
-//   color: var(--colorSecondary);
-// }
-
-/* RESPONSIVE VERSION */
+@media (min-width: $desktop) {
+  .member__left {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-right: 300px;
+    margin-bottom: 60px;
+  }
+  .member__right {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-left: 300px;
+    margin-bottom: 60px;
+    & .photo-paula {
+      order: 2;
+    }
+    & .about__member {
+      order: 1;
+    }
+    & .photo-natalia {
+      order: 2;
+    }
+  }
+  .about__member {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    & .about__h4--left {
+      margin-left: 0px;
+      text-align: left;
+    }
+    & .about__h4--right {
+      margin-right: 0px;
+      text-align: right;
+    }
+    & .description {
+      text-align: left;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    & .paula-description {
+      text-align: right;
+    }
+    & .natalia-description {
+      text-align: right;
+    }
+    .nav-iconsR {
+      margin-left: auto;
+    }
+  }
+  .photo-noelia {
+    width: 205px;
+    height: 205px;
+    margin-right: 45px;
+    margin-left: 138px;
+  }
+  .photo-natalia {
+    width: 205px;
+    height: 205px;
+    margin-left: 45px;
+    margin-right: 138px;
+  }
+  .photo-alejandra {
+    width: 205px;
+    height: 205px;
+    margin-right: 45px;
+    margin-left: 138px;
+  }
+  .photo-paula {
+    width: 205px;
+    height: 205px;
+    margin-left: 45px;
+    margin-right: 138px;
+  }
+}
