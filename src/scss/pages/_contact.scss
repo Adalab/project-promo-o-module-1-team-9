@@ -58,6 +58,7 @@
   display: flex;
   flex-direction: column;
   font-size: 0.875rem;
+  margin-bottom: 60px;
 }
 
 .contact-form input {
@@ -97,12 +98,13 @@
   color: $colorSecondary;
 }
 
-.send-button .button .send {
-  background-color: aqua;
+.send-button .send {
+  background-color: $colorPrincipal;
   color: #fff;
   height: 45px;
   text-align: center;
   padding: 11px 15px;
   margin-top: 7px;
   margin-bottom: 60px;
+  border-radius: 4px;
 }
