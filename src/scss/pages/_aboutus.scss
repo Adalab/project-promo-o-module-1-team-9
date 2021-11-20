@@ -138,7 +138,9 @@
   color: $colorPrincipal;
   line-height: 1.88;
 }
-.about__nav {
+.about__nav,
+.nav-iconsL,
+.nav-iconsR {
   color: $colorPrincipal;
   font-size: 16px;
   font-weight: normal;
