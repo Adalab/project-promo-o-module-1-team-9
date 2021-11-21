@@ -25,33 +25,24 @@
 
 /* Noelia's photo */
 
-.photo-noelia {
+.about__img {
   margin-top: 30px;
   width: 180px;
   height: 180px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+  border-radius: 4px;
+  border: solid 5px $ColorContrast4Transparent;
 }
 
 .img-noelia {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 4px;
-  border: solid 5px $ColorContrast4Transparent;
 }
 
 /* Natalia's photo */
-.photo-natalia {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  width: 180px;
-  height: 180px;
-  border-radius: 4px;
-  border: solid 5px $ColorContrast4Transparent;
-}
 
 .img-natalia {
   width: 100%;
@@ -60,15 +51,7 @@
 }
 
 /* Paula's photo */
-.photo-paula {
-  width: 180px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  height: 180px;
-  border-radius: 4px;
-  border: solid 5px $ColorContrast4Transparent;
-}
+
 .img-paula {
   width: 100%;
   height: 100%;
@@ -76,15 +59,6 @@
 }
 
 /* Alejandra's photo */
-.photo-alejandra {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  width: 180px;
-  height: 180px;
-  border-radius: 4px;
-  border: solid 5px $ColorContrast4Transparent;
-}
 
 .img-alejandra {
   width: 100%;
@@ -92,7 +66,7 @@
   object-fit: cover;
 }
 
-.member {
+.about__member--h4 {
   height: 45px;
   margin-left: auto;
   margin-right: auto;
@@ -127,7 +101,7 @@
   align-items: center;
 }
 
-.nav-icons {
+.nav_icons {
   width: 124px;
   margin-top: 15px;
   display: flex;
@@ -138,10 +112,7 @@
   color: $colorPrincipal;
   line-height: 1.88;
 }
-.about__nav,
-.nav-iconsL,
-.nav-iconsR {
-  color: $colorPrincipal;
+.about__nav {
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -151,155 +122,81 @@
 /* Responsive: tablet */
 
 @media (min-width: $tablet) {
-  .member__left {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+  .article__member {
+    display: flex;
     margin-right: 45px;
-    margin-bottom: 30px;
-  }
-  .member__right {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
     margin-left: 45px;
-    margin-bottom: 30px;
-    & .photo-paula {
-      order: 2;
+
+    & .about__img {
+      width: 205px;
+      height: 205px;
+      margin-right: 31px;
     }
     & .about__member {
-      order: 1;
-    }
-    & .photo-natalia {
-      order: 2;
+      width: 442px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      & .description {
+        text-align: left;
+      }
     }
   }
-  .about__member {
+  .article__member:nth-child(odd) {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    & .about__h4--left {
-      margin-left: 0px;
-      text-align: left;
-    }
-    & .about__h4--right {
-      margin-right: 0px;
+    flex-direction: row-reverse;
+
+    .description {
       text-align: right;
     }
-    & .description {
-      text-align: left;
-      margin-right: 0px;
-      margin-left: 0px;
-    }
-    & .paula-description {
-      text-align: right;
-    }
-    & .natalia-description {
-      text-align: right;
-    }
-    .nav-iconsR {
-      margin-left: auto;
+    & .about__img:nth-child(odd) {
+      margin-left: 31px;
+      margin-right: 29px;
     }
   }
-  .photo-noelia {
-    width: 205px;
-    height: 205px;
-    margin-right: 31px;
-    margin-left: 29px;
-  }
-  .photo-natalia {
-    width: 205px;
-    height: 205px;
-    margin-left: 31px;
-    margin-right: 29px;
-  }
-  .photo-alejandra {
-    width: 205px;
-    height: 205px;
-    margin-right: 31px;
-    margin-left: 29px;
-  }
-  .photo-paula {
-    width: 205px;
-    height: 205px;
-    margin-left: 31px;
-    margin-right: 29px;
+  .about__member:nth-of-type(2) {
+    justify-content: flex-end;
   }
 }
 
 // Responsive: Desktop
 
 @media (min-width: $desktop) {
-  .member__left {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+  .article__member {
+    display: flex;
     margin-right: 300px;
-    margin-bottom: 60px;
-  }
-  .member__right {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    margin-left: 300px;
-    margin-bottom: 60px;
-    & .photo-paula {
-      order: 2;
+    margin-left: 138px;
+    margin-bottom: 97px;
+
+    & .about__img {
+      width: 278px;
+      height: 278px;
     }
     & .about__member {
-      order: 1;
-    }
-    & .photo-natalia {
-      order: 2;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      & .description {
+        text-align: left;
+      }
+      & .about__member--h4 {
+        margin: 0px;
+      }
     }
   }
-  .about__member {
+
+  .article__member:nth-child(odd) {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    & .about__h4--left {
-      margin-left: 0px;
-      text-align: left;
-    }
-    & .about__h4--right {
-      margin-right: 0px;
-      text-align: right;
-    }
-    & .description {
-      text-align: left;
-      margin-right: 0px;
-      margin-left: 0px;
-    }
-    & .paula-description {
-      text-align: right;
-    }
-    & .natalia-description {
-      text-align: right;
-    }
-    .nav-iconsR {
-      margin-left: auto;
-    }
-  }
-  .photo-noelia {
-    width: 205px;
-    height: 205px;
-    margin-right: 45px;
-    margin-left: 138px;
-  }
-  .photo-natalia {
-    width: 205px;
-    height: 205px;
-    margin-left: 45px;
+    flex-direction: row-reverse;
+    margin-left: 300px;
     margin-right: 138px;
+    .description {
+      text-align: right;
+    }
   }
-  .photo-alejandra {
-    width: 205px;
-    height: 205px;
-    margin-right: 45px;
-    margin-left: 138px;
-  }
-  .photo-paula {
-    width: 205px;
-    height: 205px;
-    margin-left: 45px;
-    margin-right: 138px;
+  .about__member:nth-of-type(2) {
+    justify-content: flex-end;
   }
 }
