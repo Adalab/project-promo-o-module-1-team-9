@@ -27,9 +27,9 @@
   //  @media (min-width: $tablet) {
   // width: 442px;
   //  }
-  //  @media (min-width: $desktop) {
-  //   width: 601px;
-  // }
+  @media (min-width: $desktop) {
+    margin-top: 129px;
+  }
 }
 
 .contact__title {
@@ -45,7 +45,7 @@
   letter-spacing: normal;
   text-align: center;
   text-transform: uppercase;
-  color: $colorSecondary;
+  color: $colorPrincipal;
 }
 
 .contact__des {

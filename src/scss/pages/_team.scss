@@ -8,13 +8,16 @@
 
 .team-wrapper {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 30px 15px 0 15px;
 
   @media (min-width: $tablet) {
     padding: 45px 45px 20px 45px;
   }
   @media (min-width: $desktop) {
-    margin: 0 300px;
+    margin: 129px 300px 0;
     padding-top: 45px;
   }
 }
@@ -26,7 +29,7 @@
   font-weight: 500;
   line-height: 1.88;
   text-align: center;
-  color: $colorSecondary;
+  color: $colorPrincipal;
 }
 .p-equipo {
   font-family: $typoText;
@@ -39,9 +42,11 @@
   @media all and (min-width: $tablet) {
     opacity: 67%;
     text-align: center;
+    width: 678px;
   }
   @media (min-width: $desktop) {
     opacity: 67%;
+    width: 601px;
   }
 }
 
@@ -51,11 +56,18 @@
   background-color: $colorContrast1;
   transform: rotate(45deg) translate(0, 50%);
   position: relative;
-  margin: auto;
+  left: 12px;
+  top: 4px;
+  // margin: auto;
 
   @media (min-width: $tablet) {
     transform: translate(0, 50%) rotate(45deg);
     top: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    transform: translate(0, 50%) rotate(45deg);
+    left: 0;
   }
 }
 
@@ -68,11 +80,14 @@
   flex-direction: column;
   @media (min-width: $tablet) {
     flex-direction: row;
+    justify-content: center;
+    gap: 30px;
     padding: 45px 0 60px 0;
   }
   @media (min-width: $desktop) {
-    flex-direction: row;
-    padding: 45px 138px 60px 138px;
+    gap: 45px;
+    // flex-direction: row;
+    // padding: 45px 138px 60px 138px;
   }
 }
 
@@ -88,9 +103,10 @@
 
 .sectionteam__teamstrengths {
   @media (min-width: $tablet) {
-    padding: 0 45px;
-    // padding-left: 45px;
-    width: 50%;
+    width: 324px;
+  }
+  @media (min-width: $desktop) {
+    width: 439px;
   }
 }
 
@@ -110,7 +126,6 @@
   // }
 }
 .p-fortalezas {
-  margin: auto;
   font-family: $typoText;
   font-size: 16px;
   line-height: 1.5;
@@ -122,15 +137,18 @@
   }
 
   @media (min-width: $desktop) {
-    width: 80%;
+   
   }
 }
 
 // Debilidades
 .sectionteam__teamweakness {
   @media (min-width: $tablet) {
-    padding: 0 45px;
-    width: 50%;
+    // margin-left: 45px;
+    width: 324px;
+  }
+  @media (min-width: $desktop) {
+    width: 439px;
   }
 }
 .debilidades {
@@ -161,7 +179,7 @@
     // width: 50%;
   }
   @media (min-width: $desktop) {
-    width: 80%;
+
   }
 }
 /*@media all and (min-width: $tablet) {

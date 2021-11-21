@@ -1,123 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/88da29725b.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <title>Contacto</title>
-  </head>
 
-  <body>
-    <header class="header-container">
-      <div class="header-fix">
-        <h1 class="group-name">CODE-FIGHTERS</h1>
-        <nav class="menu-bar">
-          <ul class="menu-container">
-            <li class="menu-item item-1">
-              <a class="link-team" href="./index.html#team">EQUIPO</a>
-            </li>
-            <li class="menu-item item-2">
-              <a class="link-who" href="./index.html#quienes-somos">QUIÉNES SOMOS</a>
-            </li>
-            <li class="menu-item item-3">
-              <a class="link-contact" href="./contact.html">CONTACTO</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="header-background"></div>
-      <div class="hero">
-        <p>¿No me tomas en serio porque soy una mujer? <em>Espera y verás.</em></p>
-      </div>
-    </header>
-    <main class="main-contact">
-      <section class="contact">
-        <h2 class="contact-title">Contacto</h2>
-        <div class="contact-p">
-          <p>
-            (Estamos dispuestas a hacerle frente a cualquier desafío: así que,)
-            haznos saber tus problemas, que nosotras nos encargamos de darles
-            soluciones. No dudes en ponerte en contacto con nosotras:
-          </p>
-          <p class="small">
-            Todos los campos marcados con <span class="highlight">*</span> son
-            obligatorios
-          </p>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/88da29725b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <title>Contacto</title>
+</head>
 
-        <form action="/signup" method="post" class="contact-form">
-          <div class="contact-form-container">
-            <label for="completeName"
-              >Nombre completo <span class="highlight">*</span></label
+<body>
+  <header class="header">
+    <div class="header__fixed">
+      <h1 class="header__fixed--groupName">CODE-FIGHTERS</h1>
+      <nav class="header__fixed--menuBar">
+        <ul class="menu-container">
+          <li class="menu-item item-1">
+            <a class="link-team" href="./index.html#team">Equipo</a>
+          </li>
+          <li class="menu-item item-2">
+            <a class="link-who" href="./index.html#quienes-somos"
+              >Quiénes somos</a
             >
-            <input
-              class="contact-form-item"
-              placeholder="Nombre..."
-              id="completeName"
-              type="text"
-              name="completeName"
-              required
-            />
-          </div>
-          <div class="contact-form-container">
+          </li>
+          <li class="menu-item item-3">
+            <a class="link-contact" href="./contact.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-background imgContact"></div>
+    <div class="hero hiddenHero">
+      <p>¿No me tomas en serio porque soy una mujer? <em>Espera y verás.</em></p>
+    </div>
+  </header>
+
+  <main class="contact">
+      <h2 class="contact__title">Contacto</h2>
+      <div class="contact__des">
+        <p>
+          Estamos dispuestas a hacerle frente a cualquier desafío: haznos saber
+          tus problemas, que nosotras nos encargamos de darles soluciones. No
+          dudes en ponerte en contacto con nosotras:
+        </p>
+        <p class="contact__des--disclaimer">
+          Todos los campos marcados con <span class="highlight">*</span> son
+          obligatorios
+        </p>
+      </div>
+
+      <form action="https://formspree.io/f/mdoyqqaa" method="post" class="contact__form">
+        <div class="contact__form--container">
+          <label for="completeName"
+            >Nombre completo <span class="highlight">*</span></label
+          >
+          <input
+            class="contact__form--item"
+            placeholder="Nombre..."
+            id="completeName"
+            type="text"
+            name="completeName"
+            required
+          />
+        </div>
+        <div class="contact__form--container-row">
+          <div class="contact__form--container">
             <label for="emailAddress">Email <span class="highlight">*</span></label>
             <input
-              class="contact-form-item"
-              value="nombre.apellidos@mail.com"
+              class="contact__form--item"
+              placeholder="nombre.apellidos@mail.com"
               id="emailAddress"
               type="email"
               name="email"
             />
           </div>
-          <div class="contact-form-container">
+
+          <div class="contact__form--container">
             <label for="phoneNumber">Teléfono</label>
             <input
-              class="contact-form-item"
+              class="contact__form--item"
               placeholder="Ej: 123456789"
               id="phoneNumber"
               type="tel"
               name="phoneNumber"
             />
           </div>
-          <div class="contact-form-container">
-            <label for="message">Mensaje <span class="highlight">*</span></label>
-            <textarea
-              class="contact-form-item"
-              id="message"
-              name="message"
-              rows="5"
-              cols="50"
-              placeholder="¿Qué necesitas?"
-            ></textarea>
-          </div>
-          <div class="send-button">
-            <input class="send" type="submit" value="Enviar" name="send" />
-          </div>
-        </form>
-      </section>
-    </main>
+        </div>
+        <div class="contact__form--container">
+          <label for="message">Mensaje <span class="highlight">*</span></label>
+          <textarea
+            class="contact__form--item contact__form--textarea"
+            id="message"
+            name="message"
+            rows="5"
+            cols="50"
+            placeholder="¿Qué necesitas?"
+          ></textarea>
+        </div>
+        <div class="contact__form--button">
+          <input class="send" type="submit" value="Enviar" name="send" />
+        </div>
+      </form>
+  </main>
 
-    <footer class="footer">
-      <small class="name-in-footer">Code Fighters © 2021</small>
-      <nav class="footer-menu">
-
-        <a class="footer-a" href="./index.html#team">Equipo</a>
-        <a class="footer-a" href="./index.html#quienes-somos">Quiénes somos</a>
-        <a class="footer-a" href="./contact.html">Contacto</a>
-
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <small class="footer__caption">Code Fighters © 2021</small>
+      <nav class="footer__menu">
+        <a class="footer__menu--link" href="./index.html#team">Equipo</a>
+        <a class="footer__menu--link" href="./index.html#quienes-somos">Quiénes somos</a>
+        <a class="footer__menu--link" href="./contact.html">Contacto</a>
       </nav>
-      <div class="adalab-logo"><img class="adalab" src="./assets/images/logo-adalab.png" alt="Logo Adalab"></div>
-    </footer>
-  </body>
+      <div class="footer__logo"><img class="footer__logo--img" src="./assets/images/logo-adalab.png" alt="Logo Adalab"></div>
+    </div>
+  </footer>
+</body>
+
 </html>

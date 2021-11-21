@@ -129,9 +129,9 @@
     margin-left: 45px;
 
     & .about__img {
-      width: 205px;
-      height: 205px;
-      margin-right: 31px;
+      width: 206px;
+      height: 206px;
+      // margin-right: 31px;
     }
     & .about__member {
       width: 442px;
@@ -152,17 +152,19 @@
       text-align: right;
     }
     & .about__img:nth-child(odd) {
-      margin-left: 31px;
-      margin-right: 29px;
+      // margin-left: 31px;
+      // margin-right: 29px;
     }
   }
 
   .left {
     justify-content: flex-start;
+    margin-left: 30px;
   }
 
   .right {
     justify-content: flex-end;
+    margin-right: 30px;
   }
   // .about__member:nth-of-type(2) {
   //   justify-content: flex-end;
