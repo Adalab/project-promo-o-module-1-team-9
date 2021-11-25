@@ -7,12 +7,15 @@
 
 // Contact: header
 .contact-background {
-  height: 421px;
+  height: 300px;
   width: 100%;
   background-size: cover;
   background-image: url(../images/contact.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  @media (min-width: $desktop) {
+    height: 400px;
+  }
 }
 
 // Contact: main
@@ -33,7 +36,6 @@
 }
 
 .contact__title {
-  padding-top: 30px;
   padding-bottom: 15px;
   // margin: auto;
   font-family: $typoTitle;
@@ -46,6 +48,13 @@
   text-align: center;
   text-transform: uppercase;
   color: $colorPrincipal;
+
+  @media (min-width: $tablet) {
+    padding-top: 30px;
+  }
+  @media (min-width: $tablet) {
+    padding-top: 45px;
+  }
 }
 
 .contact__des {
@@ -110,11 +119,6 @@
     justify-content: space-between;
   }
 }
-
-// .contact-form-item {
-//   margin: 5px 0 15px 0;
-//   padding: 11px 15px 15px 15px;
-// }
 
 #message {
   font-family: $typoText;
