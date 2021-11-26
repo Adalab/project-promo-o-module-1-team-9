@@ -91,6 +91,11 @@
     width: 601px;
   }
 
+  // input:focus, textarea:focus {
+  //   border: 2px solid $colorSecondary;
+  //   box-shadow: 0 0 4px $colorSecondary, 0 0 4px $colorSecondary,
+  //     0 0 8px $colorSecondary;
+  // }
   input::placeholder,
   textarea::placeholder {
     color: $colorContrast2;
@@ -101,6 +106,7 @@
   }
   &--item {
     border: 1px solid #b8b8b9;
+    outline: none;
     display: block;
     text-align: left;
     height: 45px;
@@ -110,6 +116,12 @@
   }
   &--textarea {
     height: 105px;
+  }
+  &--item:focus,
+  &--textarea:focus {
+    border: 2px solid $colorSecondary;
+    box-shadow: 0 0 3px $colorSecondary, 0 0 3px $colorSecondary,
+      0 0 5px $colorSecondary;
   }
   &--container-row {
     @media (min-width: $desktop) {
@@ -152,6 +164,7 @@
 
     .send {
       width: 100%;
+      cursor: pointer;
       background-color: $colorPrincipal;
       color: #fff;
       height: 45px;
