@@ -46,54 +46,86 @@
     }
 
     // Header: menu
-    .header__fixed--menuBar {
+    &--menuBar {
       @media (min-width: $tablet) {
         margin-right: 45px;
       }
       @media (min-width: $desktop) {
         margin-right: 142px;
       }
-    }
-  }
-}
 
-/* Header: sections */
+      /* Header: sections */
+      .menu-container {
+        background-color: $colorSecondaryTransparent;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
 
-.menu-container {
-  background-color: $colorSecondaryTransparent;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 0;
+        @media (min-width: $tablet) {
+          background-color: transparent;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .menu-item {
+          list-style-type: none;
+          display: inline-block;
+          position: relative;
 
-  @media (min-width: $tablet) {
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
+          .link-who {
+            width: 100%;
+            display: block;
+          }
 
-.menu-item {
-  list-style-type: none;
+          .link-team,
+          .link-who,
+          .link-contact {
+            text-transform: uppercase;
+            padding: 8px;
+            text-decoration: none;
+            color: $colorContrast1;
+            font-family: $typoTitle;
+            font-size: 15px;
+            line-height: 30px;
+          }
 
-  .link-who {
-    width: 100%;
-    display: block;
-  }
+          .link-team:before,
+          .link-contact:before {
+            background-color: $colorContrast1;
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2.5px;
+            bottom: 0px;
+            right: 0;
+            transition: all 0.5s ease;
+          }
+          .link-team:hover:before,
+          .link-contact:hover:before {
+            width: 100%;
+            left: 0;
+          }
 
-  .link-team,
-  .link-who,
-  .link-contact {
-    text-transform: uppercase;
-    padding: 8px;
-    text-decoration: none;
-    color: $colorContrast1;
-    font-family: $typoTitle;
-    font-size: 15px;
-    line-height: 30px;
-  }
-}
+          .link-who:before {
+            background-color: $colorContrast1;
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2.5px;
+            bottom: 8px;
+            right: 0;
+            transition: all 0.5s ease;
+          }
+          .link-who:hover:before {
+            width: 100%;
+            left: 0;
+          }
+        } // menu-item closure
+      } // menu-container closure
+    } // menuBar closure
+  } // fixed closure
+} // header closure
 
 /* Header: image */
 .header-background {
@@ -140,10 +172,10 @@
     height: 5rem;
     opacity: 0.8;
   }
-  & p {
+  &__paragraph {
     text-align: center;
     @media (min-width: $tablet) {
-        text-align: left;
+      text-align: left;
     }
   }
 }
