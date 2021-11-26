@@ -27,6 +27,8 @@
         id="completeName"
         type="text"
         name="completeName"
+        pattern="^\b([A-ZÀ-ÿ][-,a-z ']+[ ]*)+$"
+        title="Introduce tu nombre o tu nombre completo"
         required
       />
     </div>
@@ -40,6 +42,7 @@
           type="email"
           name="email"
           title="Introduce un email válido"
+          pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?.)+[.][a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
           required
         />
       </div>
@@ -52,8 +55,8 @@
           id="phoneNumber"
           type="tel"
           name="phoneNumber"
-          pattern="^[0-9]{9}$"
-          title="Por favor, introduce solo 9 números "
+          pattern="^[6-7-9]{1}[0-9]{8}$"
+          title="Por favor, introduce un número de teléfono fijo o móvil de España "
         />
       </div>
     </div>

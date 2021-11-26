@@ -1,52 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/88da29725b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Code-Fighters - Contacto</title>
+    <link rel="icon" href="./assets/images/favicon.png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
-    rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/88da29725b.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./assets/css/main.css" />
-  <title>Contacto</title>
-</head>
+  <body>
+    <header id="home" class="header">
+      <div class="header__fixed">
+        <h1 class="header__fixed--groupName">
+          <a class="link-home" href="./index.html#home" title="Volver al inicio"
+            >Code-fighters</a
+          >
+        </h1>
+        <nav class="header__fixed--menuBar">
+          <ul class="menu-container">
+            <li class="menu-item item-1">
+              <a class="link-team" href="./index.html#team" title="Ir a 'Equipo'"
+                >Equipo</a
+              >
+            </li>
+            <li class="menu-item item-2">
+              <a
+                class="link-who"
+                href="./index.html#quienes-somos"
+                title="Ir a 'Quiénes somos'"
+                >Quiénes somos</a
+              >
+            </li>
+            <li class="menu-item item-3">
+              <a
+                class="link-contact"
+                href="./contact.html"
+                title="Contacta con Code-Fighters"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-background imgContact" title="code-fighters background"></div>
+      <div class="hero hiddenHero">
+        <p>¿No me tomas en serio porque soy una mujer? <em>Espera y verás.</em></p>
+      </div>
+    </header>
 
-<body>
-  <header class="header">
-    <div class="header__fixed">
-      <h1 class="header__fixed--groupName">CODE-FIGHTERS</h1>
-      <nav class="header__fixed--menuBar">
-        <ul class="menu-container">
-          <li class="menu-item item-1">
-            <a class="link-team" href="./index.html#team">Equipo</a>
-          </li>
-          <li class="menu-item item-2">
-            <a class="link-who" href="./index.html#quienes-somos"
-              >Quiénes somos</a
-            >
-          </li>
-          <li class="menu-item item-3">
-            <a class="link-contact" href="./contact.html">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header-background imgContact"></div>
-    <div class="hero hiddenHero">
-      <p>¿No me tomas en serio porque soy una mujer? <em>Espera y verás.</em></p>
-    </div>
-  </header>
-
-  <main class="contact">
+    <main class="contact">
       <h2 class="contact__title">Contacto</h2>
       <div class="contact__des">
         <p>
-          Estamos dispuestas a hacerle frente a cualquier desafío: haznos saber
-          tus problemas, que nosotras nos encargamos de darles soluciones. No
-          dudes en ponerte en contacto con nosotras:
+          Estamos dispuestas a hacerle frente a cualquier desafío: haznos saber tus
+          problemas, que nosotras nos encargamos de darles soluciones. No dudes en
+          ponerte en contacto con nosotras:
         </p>
         <p class="contact__des--disclaimer">
           Todos los campos marcados con <span class="highlight">*</span> son
@@ -54,7 +73,11 @@
         </p>
       </div>
 
-      <form action="https://formspree.io/f/mdoyqqaa" method="post" class="contact__form">
+      <form
+        action="https://formspree.io/f/mdoyqqaa"
+        method="post"
+        class="contact__form"
+      >
         <div class="contact__form--container">
           <label for="completeName"
             >Nombre completo <span class="highlight">*</span></label
@@ -65,6 +88,8 @@
             id="completeName"
             type="text"
             name="completeName"
+            pattern="^\b([A-ZÀ-ÿ][-,a-z ']+[ ]*)+$"
+            title="Introduce tu nombre o tu nombre completo"
             required
           />
         </div>
@@ -72,11 +97,13 @@
           <div class="contact__form--container">
             <label for="emailAddress">Email <span class="highlight">*</span></label>
             <input
-              class="contact__form--item"
+              class="contact__form--item emailAddress"
               placeholder="nombre.apellidos@mail.com"
               id="emailAddress"
               type="email"
               name="email"
+              title="Introduce un email válido"
+              pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?.)+[.][a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
               required
             />
           </div>
@@ -84,18 +111,20 @@
           <div class="contact__form--container">
             <label for="phoneNumber">Teléfono</label>
             <input
-              class="contact__form--item"
+              class="contact__form--item phoneNumber"
               placeholder="Ej: 123456789"
               id="phoneNumber"
               type="tel"
               name="phoneNumber"
+              pattern="^[6-7-9]{1}[0-9]{8}$"
+              title="Por favor, introduce un número de teléfono fijo o móvil de España "
             />
           </div>
         </div>
         <div class="contact__form--container">
           <label for="message">Mensaje <span class="highlight">*</span></label>
           <textarea
-            class="contact__form--item contact__form--textarea"
+            class="contact__form--item contact__form--textarea message"
             id="message"
             name="message"
             rows="5"
@@ -108,19 +137,22 @@
           <input class="send" type="submit" value="Enviar" name="send" />
         </div>
       </form>
-  </main>
+    </main>
 
-  <footer class="footer">
-    <div class="footer__wrapper">
-      <small class="footer__caption">Code Fighters © 2021</small>
-      <nav class="footer__menu">
-        <a class="footer__menu--link" href="./index.html#team">Equipo</a>
-        <a class="footer__menu--link" href="./index.html#quienes-somos">Quiénes somos</a>
-        <a class="footer__menu--link" href="./contact.html">Contacto</a>
-      </nav>
-      <div class="footer__logo"><img class="footer__logo--img" src="./assets/images/logo-adalab.png" alt="Logo Adalab"></div>
-    </div>
-  </footer>
-</body>
-
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <small class="footer__caption">Code Fighters © 2021</small>
+        <nav class="footer__menu">
+          <a class="footer__menu--link" href="./index.html#team">Equipo</a>
+          <a class="footer__menu--link" href="./index.html#quienes-somos">Quiénes somos</a>
+          <a class="footer__menu--link" href="./contact.html">Contacto</a>
+        </nav>
+        <nav class="footer__logo">
+          <a href="https://adalab.es/" title="Adalab" target="_blank" rel="noopener noreferrer">
+            <img class="footer__logo--img" src="./assets/images/logo-adalab.png" alt="Logo Adalab">
+          </a>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>
