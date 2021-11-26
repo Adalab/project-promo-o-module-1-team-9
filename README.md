@@ -11,9 +11,12 @@
 
 ### Integrantes del equipo
 
-[![Autor](https://img.shields.io/badge/github-Noelia%20Prieto-yellow?style=for-the-badge&logo=github)](https://github.com/NoeliaPH)
-[![Autor](https://img.shields.io/badge/github-Natalia%20Jiménez-brightgreen?style=for-the-badge&logo=github)](https://github.com/NataliaaJN)
-[![Autor](https://img.shields.io/badge/github-Alejandra%20Mejía-blue?style=for-the-badge&logo=github)](https://github.com/PaulaEPR) 
+[![Autor](https://img.shields.io/badge/github-Noelia%20Prieto-yellow?style=for-the-badge&logo=github)](https://github.com/NoeliaPH)  
+
+[![Autor](https://img.shields.io/badge/github-Natalia%20Jiménez-brightgreen?style=for-the-badge&logo=github)](https://github.com/NataliaaJN)  
+
+[![Autor](https://img.shields.io/badge/github-Alejandra%20Mejía-blue?style=for-the-badge&logo=github)](https://github.com/PaulaEPR)  
+
 [![Autor](https://img.shields.io/badge/github-Paula%20Perera-red?style=for-the-badge&logo=github)](https://github.com/PaulaEPR)
 
 ### Tecnologías utilizadas
