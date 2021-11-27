@@ -171,13 +171,14 @@
     width: 35.875rem;
     height: 5rem;
     opacity: 0.8;
+    justify-content: flex-start;
   }
-  &__paragraph {
-    text-align: center;
-    @media (min-width: $tablet) {
-      text-align: left;
-    }
-  }
+  // &__paragraph {
+  //   text-align: center;
+  //   @media (min-width: $tablet) {
+  //     text-align: left;
+  //   }
+ // }
 }
 
 .hiddenHero {
