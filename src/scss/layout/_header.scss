@@ -69,6 +69,7 @@
     }
     // Header: menu
     &--menuBar {
+      margin-right: 0;
       @media (min-width: $tablet) {
         margin-right: 45px;
       }
