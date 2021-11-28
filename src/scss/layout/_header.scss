@@ -47,22 +47,24 @@
     .link-home {
       padding: 15px 80px;
       @media (min-width: $tablet) {
-        padding: 15px 0;
+        display: none;
       }
     }
-    .cd-logo {
+    .link-logo {
       display: none;
 
       @media (min-width: $tablet) {
+        padding: 15px 0;
         display: inline-block;
         position: fixed;
-        top: 0;
-        left: 205px;
+        top: -17px;
+        left: 5%;
         z-index: 999;
       }
       @media (min-width: $desktop) {
-        left: 0;
+        left: 8%;
       }
+
       .logo {
         display: none;
         @media (min-width: $tablet) {
