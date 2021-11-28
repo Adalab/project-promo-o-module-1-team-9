@@ -1,19 +1,6 @@
-.link__adalab:hover {
-  background-color: #099d8d;
-  color: #fff;
+.anchor {
+  scroll-margin-top: 106px;
+  @media (min-width: $tablet) {
+    scroll-margin-top: 60px;
+  }
 }
-
-.link__github:hover {
-  background-color: #CCC;
-  color: #000;
-}
-
-// .anchor {
-//   display: block;
-//   position: relative;
-//   top: -105px;
-//   visibility: hidden;
-//   @media (min-width: $tablet) {
-//     top: -60px;
-//   }
-// }
