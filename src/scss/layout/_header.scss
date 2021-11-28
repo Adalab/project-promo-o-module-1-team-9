@@ -30,11 +30,11 @@
       text-transform: uppercase;
       font-size: 16px;
       line-height: 30px;
-      padding: 15px 80px;
+      // padding: 15px 80px;
 
       @media (min-width: $tablet) {
         background-color: transparent;
-        padding: 15px 0;
+        // padding: 15px 0;
         margin-left: 45px;
 
         height: 60px;
@@ -42,6 +42,12 @@
       }
       @media (min-width: $desktop) {
         margin-left: 142px;
+      }
+    }
+    .link-home {
+      padding: 15px 80px;
+      @media (min-width: $tablet) {
+        padding: 15px 0;
       }
     }
     .cd-logo {
