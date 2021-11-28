@@ -1,67 +1,79 @@
 <main class="contact">
-    <h2 class="contact__title">Contacto</h2>
-    <div class="contact__des">
-      <p>
-        Estamos dispuestas a hacerle frente a cualquier desafío: haznos saber
-        tus problemas, que nosotras nos encargamos de darles soluciones. No
-        dudes en ponerte en contacto con nosotras:
-      </p>
-      <p class="contact__des--disclaimer">
-        Todos los campos marcados con <span class="highlight">*</span> son
-        obligatorios
-      </p>
-    </div>
+  <h2 class="contact__title">Contacto</h2>
+  <div class="contact__des">
+    <p>
+      Estamos dispuestas a hacerle frente a cualquier desafío: haznos saber tus
+      problemas, que nosotras nos encargamos de darles soluciones. No dudes en
+      ponerte en contacto con nosotras:
+    </p>
+    <p class="contact__des--disclaimer">
+      Todos los campos marcados con <span class="highlight">*</span> son
+      obligatorios
+    </p>
+  </div>
 
-    <form action="/signup" method="post" class="contact__form">
+  <form
+    action="https://formspree.io/f/mdoyqqaa"
+    method="post"
+    class="contact__form"
+  >
+    <div class="contact__form--container">
+      <label for="completeName"
+        >Nombre completo <span class="highlight">*</span></label
+      >
+      <input
+        class="contact__form--item"
+        placeholder="Nombre..."
+        id="completeName"
+        type="text"
+        name="completeName"
+        pattern="^\b([A-ZÀ-ÿ][-,a-z ']+[ ]*)+$"
+        title="Introduce tu nombre o tu nombre completo"
+        required
+      />
+    </div>
+    <div class="contact__form--container-row">
       <div class="contact__form--container">
-        <label for="completeName"
-          >Nombre completo <span class="highlight">*</span></label
-        >
+        <label for="emailAddress">Email <span class="highlight">*</span></label>
         <input
-          class="contact__form--item"
-          placeholder="Nombre..."
-          id="completeName"
-          type="text"
-          name="completeName"
+          class="contact__form--item emailAddress"
+          placeholder="nombre.apellidos@mail.com"
+          id="emailAddress"
+          type="email"
+          name="email"
+          title="Introduce un email válido"
+          pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?.)+[.][a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
           required
         />
       </div>
-      <div class="contact__form--container-row">
-        <div class="contact__form--container">
-          <label for="emailAddress">Email <span class="highlight">*</span></label>
-          <input
-            class="contact__form--item"
-            value="nombre.apellidos@mail.com"
-            id="emailAddress"
-            type="email"
-            name="email"
-          />
-        </div>
 
-        <div class="contact__form--container">
-          <label for="phoneNumber">Teléfono</label>
-          <input
-            class="contact__form--item"
-            placeholder="Ej: 123456789"
-            id="phoneNumber"
-            type="tel"
-            name="phoneNumber"
-          />
-        </div>
-      </div>
       <div class="contact__form--container">
-        <label for="message">Mensaje <span class="highlight">*</span></label>
-        <textarea
-          class="contact__form--item contact__form--textarea"
-          id="message"
-          name="message"
-          rows="5"
-          cols="50"
-          placeholder="¿Qué necesitas?"
-        ></textarea>
+        <label for="phoneNumber">Teléfono</label>
+        <input
+          class="contact__form--item phoneNumber"
+          placeholder="Ej: 123456789"
+          id="phoneNumber"
+          type="tel"
+          name="phoneNumber"
+          pattern="^[6-7-9]{1}[0-9]{8}$"
+          title="Por favor, introduce un número de teléfono fijo o móvil de España "
+        />
       </div>
-      <div class="contact__form--button">
-        <input class="send" type="submit" value="Enviar" name="send" />
-      </div>
-    </form>
+    </div>
+    <div class="contact__form--container">
+      <label for="message">Mensaje <span class="highlight">*</span></label>
+      <textarea
+        class="contact__form--item contact__form--textarea message"
+        id="message"
+        name="message"
+        rows="5"
+        cols="50"
+        placeholder="¿Qué necesitas?"
+        required
+      ></textarea>
+    </div>
+    <div class="contact__form--button">
+      <input class="send" type="submit" value="Enviar" name="send" />
+    </div>
+  </form>
 </main>
