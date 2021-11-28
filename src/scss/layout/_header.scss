@@ -44,7 +44,29 @@
         margin-left: 142px;
       }
     }
+    .cd-logo {
+      display: none;
 
+      @media (min-width: $tablet) {
+        display: inline-block;
+        position: fixed;
+        top: 0;
+        left: 205px;
+        z-index: 999;
+      }
+      @media (min-width: $desktop) {
+        left: 0;
+      }
+      .logo {
+        display: none;
+        @media (min-width: $tablet) {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          animation: boing 2s ease infinite;
+        }
+      }
+    }
     // Header: menu
     &--menuBar {
       @media (min-width: $tablet) {
@@ -142,6 +164,9 @@
 }
 .imgIndex {
   background-image: url("../images/nameLogo.jpg");
+  @media (min-width: $tablet) {
+    background-image: url("../images/prueba-background5.png");
+  }
 }
 .imgContact {
   background-image: url("../images/contact.jpg");
@@ -178,7 +203,7 @@
   //   @media (min-width: $tablet) {
   //     text-align: left;
   //   }
- // }
+  // }
 }
 
 .hiddenHero {

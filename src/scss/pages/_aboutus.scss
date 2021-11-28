@@ -118,6 +118,15 @@
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
+
+  .icono {
+    color: $colorPrincipal;
+    transition: all 0.5s ease;
+  }
+  .icono:hover {
+    color: $colorSecondary;
+    transform: scale(1.3);
+  }
 }
 
 /* Responsive: tablet */
