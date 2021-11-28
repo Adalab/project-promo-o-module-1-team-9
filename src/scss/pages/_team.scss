@@ -58,7 +58,6 @@
   position: relative;
   left: 12px;
   top: 4px;
-  // margin: auto;
 
   @media (min-width: $tablet) {
     transform: translate(0, 50%) rotate(45deg);
@@ -74,7 +73,6 @@
 #strengthandwaeknesses {
   background-color: $colorContrast2Transparent;
   padding: 30px 15px 45px 15px;
-  // border: 0px solid #b8b8b9;
   width: auto;
   display: flex;
   flex-direction: column;
@@ -86,8 +84,6 @@
   }
   @media (min-width: $desktop) {
     gap: 45px;
-    // flex-direction: row;
-    // padding: 45px 138px 60px 138px;
   }
 }
 
@@ -118,12 +114,6 @@
   text-align: center;
   color: $colorPrincipal;
   padding: 0;
-  @media (min-width: $tablet) {
-    // width: 50%;
-  }
-  // @media all and (min-width: $desktop) {
-
-  // }
 }
 .p-fortalezas {
   font-family: $typoText;
@@ -144,7 +134,6 @@
 // Debilidades
 .sectionteam__teamweakness {
   @media (min-width: $tablet) {
-    // margin-left: 45px;
     width: 324px;
   }
   @media (min-width: $desktop) {
@@ -176,81 +165,8 @@
     padding: 0;
     padding-top: 10px;
     text-align: center;
-    // width: 50%;
   }
   @media (min-width: $desktop) {
 
   }
 }
-/*@media all and (min-width: $tablet) {
-
-  .fortalezas {
-    display: flex;
-    flex-direction: row;
-  }
-  .debilidades {
-    display: flex;
-    flex-direction: row;
-  }
-  .p-equipo {
-    margin-left: 45px;
-    margin-right: 45px;
-    opacity: 67%;
-  }
-  .p-debilidades {
-    margin-right: 45px;
-  }
-  .p-fortalezas {
-    margin-left: 45px;
-  }
-}*/
-
-/* #strengthandwaeknesses {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-@media all and (min-width: 768px) {
-  .p-equipo {
-    margin-left: 45px;
-    margin-right: 45px;
-  }
-  .p-fortalezas {
-    margin-left: 45px;
-    margin-right: 45px;
-  }
-  .p-debilidades {
-    margin-left: 45px;
-    margin-right: 45px;
-  }
-  
-  .sectionteam {
-    display: flex;
-    flex-direction: column;
-  }
-  .fortalezas {
-    display: flex;
-    flex-direction: column;
-  }
-  .debilidades {
-    display: flex;
-    flex-direction: column;
-  }
-  .p-fortalezas {
-    padding-left: 45px;
-    padding-top: 45px;
-    margin-left: 57px;
-    float: left;
-    position: relative;
-    width: 50%;
-  }
-  .fortalezas {
-    padding-left: 45px;
-    padding-top: 45px;
-    padding-bottom: 15px;
-    margin-left: 57px;
-    float: left;
-    position: relative;
-    width: 50%;
-  }*/
