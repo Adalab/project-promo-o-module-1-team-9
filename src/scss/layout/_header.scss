@@ -165,9 +165,9 @@
 }
 .imgIndex {
   background-image: url("../images/logo_home.jpg");
-  @media (min-width: $tablet) {
-    background-image: url("../images/prueba-background5.png");
-  }
+  // @media (min-width: $tablet) {
+  //   background-image: url("../images/prueba-background5.png");
+  // }
 }
 .imgContact {
   background-image: url("../images/contact.jpg");
