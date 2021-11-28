@@ -50,6 +50,10 @@
   }
 }
 
+.highlight {
+  color: $colorSecondary;
+}
+
 .contact__des {
   // margin: auto;
   font-family: $typoText;
@@ -94,9 +98,6 @@
     color: $colorContrast2;
   }
 
-  .highlight {
-    color: $colorSecondary;
-  }
   &--item {
     border: 1px solid #b8b8b9;
     outline: none;
